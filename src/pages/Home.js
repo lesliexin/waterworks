@@ -25,7 +25,7 @@ const PrimaryCTA = styled.button`
     }
 `;
 
-function Home() {
+export function Home() {
     const history = useHistory();
     return (
         <Container>
@@ -35,5 +35,3 @@ function Home() {
         </Container>
     );
 };
-
-export default Home;

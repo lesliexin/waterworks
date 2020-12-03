@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import { AttributionControl, MapContainer, TileLayer, ZoomControl } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import { Pin } from "../components";
 
 const StyledMap = styled(MapContainer)`
   height: 100vh;
@@ -17,11 +18,30 @@ const Container = styled.div`
   align-items: center;
 `;
 
-function UWMap() {
-  const zoom = 16;
-  const minZoom = 15;
+export function UWMap() {
+  const zoom = 16.5;
+  const minZoom = 16.3;
   const maxZoom = 18;
-  const currentLocation = { lat: 43.4723, lng: -80.5449 };
+  const currentLocation = { lat: 43.471, lng: -80.543 };
+
+  const pinPositions = [
+    {
+      lat: 43.4723,
+      lng: -80.5449,
+    },
+    {
+      lat: 43.47,
+      lng: -80.5443,
+    },
+    {
+      lat: 43.4721,
+      lng: -80.541,
+    },
+    {
+      lat: 43.47,
+      lng: -80.541,
+    },
+  ];
 
   return (
     <React.Fragment>
@@ -39,10 +59,15 @@ function UWMap() {
           />
           <ZoomControl position="bottomright" />
           <AttributionControl position="bottomleft" />
+          {pinPositions.map((pin, key) => {
+            return (
+              <Pin
+                position={[pin.lat, pin.lng]}
+              />
+            );
+          })}
         </StyledMap>
       </Container>
     </React.Fragment>
   );
 };
-
-export default UWMap;
