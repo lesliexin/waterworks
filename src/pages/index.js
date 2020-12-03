@@ -1,2 +1,2 @@
-export {default as UWMap} from "./UWMap";
-export {default as Home} from "./Home";
+export {UWMap} from "./UWMap";
+export {Home} from "./Home";
