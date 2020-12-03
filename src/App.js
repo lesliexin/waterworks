@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { UWMap } from "./pages";
+import { Home, UWMap } from "./pages";
 
 function App() {
   const [currentTime, setCurrentTime] = useState(0);
@@ -16,10 +16,10 @@ function App() {
     <Router>
         <Switch>
           <Route exact path="/">
-            <UWMap />
+            <Home />
           </Route>
           <Route path="/map">
-            <div>Other route</div>
+            <UWMap />
           </Route>
         </Switch>
       </Router>
