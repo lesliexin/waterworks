@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from "styled-components";
 import { AttributionControl, MapContainer, TileLayer, ZoomControl } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -19,6 +19,7 @@ const Container = styled.div`
 `;
 
 export function UWMap() {
+  const [heatmapCoordinates, setHeatmapCoordinates] = useState([]);
   const zoom = 16.5;
   const minZoom = 16.3;
   const maxZoom = 18;
@@ -43,40 +44,12 @@ export function UWMap() {
     },
   ];
 
-  const dataPoints = [
-    {
-      lat: 43.4723,
-      lng: -80.5449,
-    },
-    {
-      lat: 43.47,
-      lng: -80.5443,
-    },
-    {
-      lat: 43.4721,
-      lng: -80.541,
-    },
-    {
-      lat: 43.47,
-      lng: -80.541,
-    },
-    {
-      lat: 43.4723,
-      lng: -80.5449,
-    },
-    {
-      lat: 43.47,
-      lng: -80.5441,
-    },
-    {
-      lat: 43.4731,
-      lng: -80.541,
-    },
-    {
-      lat: 43.471,
-      lng: -80.541,
-    },
-  ];
+  useEffect(() => {
+    fetch('/heatmap').then(res => res.json()).then(result => {
+      setHeatmapCoordinates(result.data);
+    });
+    console.log('hello', heatmapCoordinates)
+  }, [setHeatmapCoordinates]);
 
   return (
     <React.Fragment>
@@ -101,10 +74,10 @@ export function UWMap() {
               />
             );
           })}
-          {dataPoints.map((pin, key) => {
+          {heatmapCoordinates.map((coordinate, key) => {
             return (
               <HeatPin
-                position={[pin.lat, pin.lng]}
+                position={[coordinate.lat, coordinate.lng]}
               />
             );
           })}
