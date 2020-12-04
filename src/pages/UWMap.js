@@ -53,8 +53,11 @@ export function UWMap() {
   }, [setHeatmapCoordinates]);
 
   const handleOpenModal = () => {
-    // setShowModal(true);
-    console.log("CLOSE");
+    setShowModal(true);
+  }
+
+  const handleCloseModal = () => {
+    setShowModal(false);
   }
 
   return (
@@ -84,11 +87,12 @@ export function UWMap() {
             return (
               <Pin
                 position={[pin.lat, pin.lng]}
+                handleClick={handleOpenModal}
               />
             );
           })}
         </StyledMap>
-        {showModal && <Modal/>}
+        {showModal && <Modal handleClick={handleCloseModal}/>}
       </Container>
     </React.Fragment>
   );

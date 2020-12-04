@@ -1,14 +1,7 @@
 import React from 'react';
 import L from "leaflet";
-import styled from "styled-components";
 import pinMarker from "../assets/pin.svg";
-import { Marker, Popup} from "react-leaflet";
-
-const StyledMarker = styled(Marker)`
-  .leaflet-marker-pane {
-    z-index: 1000;
-  }
-`;
+import { Marker } from "react-leaflet";
 
 export function Pin(props) {
     const icon = new L.Icon({
@@ -21,19 +14,13 @@ export function Pin(props) {
         iconSize: new L.Point(25, 25),
     });
   return (
-    <StyledMarker
+    <Marker
       position={props.position}
       icon={icon}
       zIndexOffset={1000}
       eventHandlers={{
-        click: (e) => {
-          console.log('marker clicked', e)
-        },
+        click: (e) => {props.handleClick()}
       }}
-    >
-        <Popup>
-            A popup
-        </Popup>
-    </StyledMarker>
+    />
   );
 };

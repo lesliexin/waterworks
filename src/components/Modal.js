@@ -20,10 +20,10 @@ const Close = styled.button`
     }
 `;
 
-export function Modal() {
+export function Modal(props) {
     return (
         <Container>
-           <Close>x</Close>
+           <Close onClick={props.handleClick}>x</Close>
            Some info....
         </Container>
     );
