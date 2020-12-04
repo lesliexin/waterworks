@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from "styled-components";
 import { AttributionControl, MapContainer, TileLayer, ZoomControl } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { HeatPin, Pin } from "../components";
+import { HeatPin, Modal, Pin } from "../components";
 
 const StyledMap = styled(MapContainer)`
   height: 100vh;
@@ -15,11 +15,13 @@ const Container = styled.div`
   display: flex;
 
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 `;
 
 export function UWMap() {
   const [heatmapCoordinates, setHeatmapCoordinates] = useState([]);
+  const [showModal, setShowModal] = useState(false);
   const zoom = 16.5;
   const minZoom = 16.3;
   const maxZoom = 18;
@@ -50,6 +52,14 @@ export function UWMap() {
     });
   }, [setHeatmapCoordinates]);
 
+  const handleOpenModal = () => {
+    setShowModal(true);
+  }
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  }
+
   return (
     <React.Fragment>
       <Container>
@@ -66,21 +76,23 @@ export function UWMap() {
           />
           <ZoomControl position="bottomright" />
           <AttributionControl position="bottomleft" />
-          {pinPositions.map((pin, key) => {
+          {heatmapCoordinates.map((pin, key) => {
             return (
-              <Pin
+              <HeatPin
                 position={[pin.lat, pin.lng]}
               />
             );
           })}
-          {heatmapCoordinates.map((coordinate, key) => {
+          {pinPositions.map((pin, key) => {
             return (
-              <HeatPin
-                position={[coordinate.lat, coordinate.lng]}
+              <Pin
+                position={[pin.lat, pin.lng]}
+                handleClick={handleOpenModal}
               />
             );
           })}
         </StyledMap>
+        {showModal && <Modal handleClick={handleCloseModal}/>}
       </Container>
     </React.Fragment>
   );
