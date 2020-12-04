@@ -6,42 +6,44 @@ import face from "../assets/face.svg";
 import iaq from "../assets/IAQ.svg";
 import e5 from "../assets/pic.png";
 
-
-const Face = styled.div`
-  display: flex;
-  justify-content: flex-start;
+const Container = styled.div`
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000;
 `;
 
-const E5 = styled.div`
-  display: flex;
-  justify-content: flex-start;
+
+const Face = styled.div`
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 80vw;
+  z-index: 1;
+`;
+
+const IAQ = styled.div`
+  position: absolute;
+  top: 200px;
+  left: 700px;
+  z-index: 1;
+`;
+
+const PrimaryCTA = styled.div`
+    position: absolute;
+    top: 720px;
+    left: 1070px;
+    z-index: 1;
+`;
+
+const E5 = styled.img`
+  position: absolute;
+  right: 0;
+  top: 5vh;
+  height: 90vh;
   z-index: 0;
 `;
 
 
-const IAQ = styled.div`
-  display: block;
-  position: absolute;
-  height: 10vh;
-  width: 20vw;
-  margin: 35vw;
-`;
-
-const Container = styled.div`
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-  background-color: #000000;
-`;
-
-const PrimaryCTA = styled.div`
-    height: 10vh;
-    width: 20vw;
-    margin: 10vw;
-`;
 
 const Link = styled.img`
     cursor: pointer;
@@ -49,6 +51,7 @@ const Link = styled.img`
 
     }
 `;
+
 
 export function Home() {
     const history = useHistory();
@@ -63,9 +66,7 @@ export function Home() {
           <PrimaryCTA>
             <Link src={letitout} alt="Entry Link" onClick={() => {history.push("/map")}}/>
           </PrimaryCTA>,
-          <E5>
-          <img src={e5} alt="E5" />;
-          </E5>
+          <E5 src={e5} alt="E5" />
         </Container>
     );
 };
