@@ -23,7 +23,7 @@ export function UWMap() {
   const [heatmapCoordinates, setHeatmapCoordinates] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const zoom = 16.5;
-  const minZoom = 16.3;
+  const minZoom = 15.9;
   const maxZoom = 18;
   const currentLocation = { lat: 43.471, lng: -80.543 };
 

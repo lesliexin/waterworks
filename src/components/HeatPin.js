@@ -11,7 +11,7 @@ export function HeatPin(props) {
         shadowUrl: null,
         shadowSize: null,
         shadowAnchor: null,
-        iconSize: new L.Point(50, 50),
+        iconSize: new L.Point(60, 60),
     });
   return (
     <Marker
