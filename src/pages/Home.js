@@ -47,8 +47,11 @@ const E5 = styled.img`
 
 
 const Link = styled.img`
-    cursor: pointer;
+    cursor: cell;
+
     &:hover {
+      border: 1px solid rgb(127, 0, 0, 0);
+      opacity: 80%;
 
     }
 `;
