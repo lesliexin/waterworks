@@ -48,7 +48,6 @@ export function UWMap() {
     fetch('/heatmap').then(res => res.json()).then(result => {
       setHeatmapCoordinates(result.data);
     });
-    console.log('hello', heatmapCoordinates)
   }, [setHeatmapCoordinates]);
 
   return (
