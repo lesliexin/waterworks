@@ -4,7 +4,7 @@ import styled from "styled-components";
 import letitout from "../assets/Letitout.svg";
 import face from "../assets/face.svg";
 import iaq from "../assets/IAQ.svg";
-import e5 from "../assets/pic.png";
+import e5 from "../assets/E5.png";
 
 const Container = styled.div`
   height: 100vh;
@@ -41,6 +41,7 @@ const E5 = styled.img`
   top: 5vh;
   height: 90vh;
   z-index: 0;
+  opacity: 50%;
 `;
 
 
@@ -57,11 +58,11 @@ export function Home() {
     const history = useHistory();
     return (
         <Container>
-          <Face>
-            <img src={face} alt="Face" />;
-          </Face>,
+          // <Face>
+          //   <img src={face} alt="Face" />
+          // </Face>,
           <IAQ>
-            <Link src={iaq} alt="Infrequently Asked Questions" />;
+            <Link src={iaq} alt="Infrequently Asked Questions" />
           </IAQ>,
           <PrimaryCTA>
             <Link src={letitout} alt="Entry Link" onClick={() => {history.push("/map")}}/>
