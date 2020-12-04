@@ -58,9 +58,9 @@ export function Home() {
     const history = useHistory();
     return (
         <Container>
-          // <Face>
-          //   <img src={face} alt="Face" />
-          // </Face>,
+          <Face>
+            <img src={face} alt="Face" />
+          </Face>,
           <IAQ>
             <Link src={iaq} alt="Infrequently Asked Questions" />
           </IAQ>,
