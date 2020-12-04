@@ -60,13 +60,13 @@ export function Home() {
         <Container>
           <Face>
             <img src={face} alt="Face" />
-          </Face>,
+          </Face>
           <IAQ>
             <Link src={iaq} alt="Infrequently Asked Questions" />
-          </IAQ>,
+          </IAQ>
           <PrimaryCTA>
             <Link src={letitout} alt="Entry Link" onClick={() => {history.push("/map")}}/>
-          </PrimaryCTA>,
+          </PrimaryCTA>
           <E5 src={e5} alt="E5" />
         </Container>
     );
