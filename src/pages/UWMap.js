@@ -29,20 +29,24 @@ export function UWMap() {
 
   const pinPositions = [
     {
-      lat: 43.4723,
-      lng: -80.5449,
+      lat: 43.47208975,
+      lng: -80.546497,
     },
     {
-      lat: 43.47,
-      lng: -80.5443,
+      lat: 43.47342058,
+      lng: -80.54628794,
     },
     {
-      lat: 43.4721,
-      lng: -80.541,
+      lat: 43.47016462,
+      lng: -80.54378624,
     },
     {
-      lat: 43.47,
-      lng: -80.541,
+      lat: 43.47150269,
+      lng: -80.54516568,
+    },
+    {
+      lat: 43.47130954,
+      lng: -80.54397031,
     },
   ];
 
@@ -72,8 +76,8 @@ export function UWMap() {
           attributionControl={false}
         >
           <TileLayer
-            url={`https://api.mapbox.com/styles/v1/lesliex/cki7youlz31xg19scmnvtid8r/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibGVzbGlleCIsImEiOiJja2k3eW1jZ2cwMGwxMzBwbGx3Y3U1bDQzIn0.UdTT7u_4ZTlr9QAUIv75qA`}
-          />
+            url={`https://api.mapbox.com/styles/v1/lesliex/ckiax2fyd06rh19nzhq6680a8/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibGVzbGlleCIsImEiOiJja2k3eW1jZ2cwMGwxMzBwbGx3Y3U1bDQzIn0.UdTT7u_4ZTlr9QAUIv75qA`}
+          /> 
           <ZoomControl position="bottomright" />
           <AttributionControl position="bottomleft" />
           {heatmapCoordinates.map((pin, key) => {
