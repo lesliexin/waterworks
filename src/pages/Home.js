@@ -5,33 +5,46 @@ import letitout from "../assets/Letitout.svg";
 import face from "../assets/face.svg";
 import iaq from "../assets/IAQ.svg";
 import e5 from "../assets/E5.png";
+import tear from "../assets/tear.svg";
 
 const Container = styled.div`
   height: 100vh;
   width: 100vw;
-  background-color: #000000;
+  background-color: #14161b
 `;
 
 
 const Face = styled.div`
   position: absolute;
-  top: 100px;
+  top: 90px;
   left: 0;
   width: 80vw;
   z-index: 1;
 `;
 
-const IAQ = styled.div`
+const Tear = styled.div`
   position: absolute;
   top: 200px;
-  left: 700px;
+  left: 536px;
+  width: 80vw;
+  z-index: 1;
+    /* -webkit-transform: translateY(200px); */
+    transform: translateY(200px);
+    /* -webkit-transition: transform 0.8s ease 5s; */
+    transition: transform 0.8s ease 5s;
+`;
+
+const IAQ = styled.div`
+  position: absolute;
+  top: 220px;
+  left: 730px;
   z-index: 1;
 `;
 
 const PrimaryCTA = styled.div`
     position: absolute;
-    top: 720px;
-    left: 1070px;
+    top: 700px;
+    left: 1060px;
     z-index: 1;
 `;
 
@@ -64,6 +77,9 @@ export function Home() {
           <Face>
             <img src={face} alt="Face" />
           </Face>
+          <Tear>
+            <img src={tear} alt="Tear" />
+          </Tear>
           <IAQ>
             <Link src={iaq} alt="Infrequently Asked Questions" />
           </IAQ>
