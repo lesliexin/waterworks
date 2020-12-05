@@ -7,6 +7,8 @@ import iaq from "../assets/IAQ.svg";
 import e5 from "../assets/E5.png";
 import tear from "../assets/tear.svg";
 
+
+
 const Container = styled.div`
   height: 100vh;
   width: 100vw;
@@ -22,16 +24,14 @@ const Face = styled.div`
   z-index: 1;
 `;
 
+
 const Tear = styled.div`
   position: absolute;
   top: 200px;
   left: 536px;
   width: 80vw;
   z-index: 1;
-    /* -webkit-transform: translateY(200px); */
-    transform: translateY(200px);
-    /* -webkit-transition: transform 0.8s ease 5s; */
-    transition: transform 0.8s ease 5s;
+  animation: 3s ease-out 1.2s 1 forwards cry;
 `;
 
 const IAQ = styled.div`

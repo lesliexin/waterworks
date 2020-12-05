@@ -13,3 +13,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@keyframes cry {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(800%);
+  }
+}
