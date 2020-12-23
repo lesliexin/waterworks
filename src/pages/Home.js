@@ -2,7 +2,6 @@ import React from 'react';
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import letitout from "../assets/Letitout.svg";
-import iaq from "../assets/IAQ.svg";
 import e5 from "../assets/E5.png";
 import tear from "../assets/tear.svg";
 import "../assets/fonts.css";
@@ -23,22 +22,22 @@ const LeftEye = styled.div`
   z-index: 1;
 
   font-family: 'Roboto Mono', monospace;
-  font-size: 21px;
+  font-size: 20px;
   letter-spacing: 3px;
   font-style: oblique;
 `;
 
 const RightEye = styled.div`
   position: absolute;
-  top: 220px;
+  top: 210px;
   left: 780px;
-  z-index: 1;
+  z-index: 2;
 
   font-family: 'Roboto Mono', monospace;
-  font-size: 21px;
+  font-size: 20px;
   letter-spacing: 2.5px;
   font-style: oblique;
-  text-decoration: underline;
+  text-decoration: 'underline';
 `;
 
 
@@ -49,10 +48,9 @@ const Mouth = styled.div`
   z-index: 1;
 
   font-family: 'Roboto Mono', monospace;
-  font-size: 21px;
+  font-size: 20px;
   letter-spacing: 2px;
   font-style: oblique;
-  text-decoration: "underline";
 `;
 
 
@@ -60,26 +58,21 @@ const Tear = styled.div`
   position: absolute;
   top: 200px;
   left: 536px;
-  width: 80vw;
+  width: 12vw;
   z-index: 1;
   animation: 3s ease-out 1.2s 1 forwards cry;
 `;
 
-const IAQ = styled.div`
-  position: absolute;
-  top: 220px;
-  left: 730px;
-  z-index: 1;
-`;
 
 const PrimaryCTA = styled.div`
     position: absolute;
-    top: 670px;
-    left: 1130px;
-    z-index: 1;
+    top: 680px;
+    left: 1140px;
+    z-index: 2;
 
     font-family: 'Roboto Mono', monospace;
-    font-size: 21px;
+    font-weight: 600;
+    font-size: 20px;
     letter-spacing: 2px;
     font-style: oblique;
 `;
@@ -92,7 +85,6 @@ const E5 = styled.img`
   z-index: 0;
   opacity: 50%;
 `;
-
 
 
 const Link = styled.div`
@@ -129,7 +121,7 @@ export function Home() {
             <defs>
             <path id='righteye' d='M29.9248,1C23.1095,69.9761 44.5307,134.828 123.141,167.512C201.752,200.197 286.887,157.46 329.118,98.9685'/>
             </defs>
-          <text x='2' fill='#FFFFFF'>
+          <text x='10' fill='#FFFFFF'>
             <textPath xlinkHref='#righteye' >
             INFREQUENTLY ASKED QUESTIONS
             </textPath>
@@ -149,7 +141,7 @@ export function Home() {
             </defs>
           <text x='12' fill='#FFFFFF'>
             <textPath xlinkHref='#mouth' >
-            EMOTIONS CAN BE DIFFICULT TO NAVIGATE, BUT HERE ARE SOME LANDMARKS ALL ACROSS CAMPUS.
+            EMOTIONS CAN BE DIFFICULT TO NAVIGATE, BUT HERE ARE SOME LANDMARKS FROM ALL ACROSS CAMPUS.
             </textPath>
           </text>
           </svg>
@@ -163,7 +155,7 @@ export function Home() {
               </defs>
             <text x='20' fill='#F2874F'>
               <textPath xlinkHref='#enter' >
-              TAKE ME THERE
+              TAKE A TOUR
               </textPath>
             </text>
             </svg>
