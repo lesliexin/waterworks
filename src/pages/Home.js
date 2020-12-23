@@ -38,7 +38,6 @@ const RightEye = styled.div`
   font-size: 20px;
   letter-spacing: 2.5px;
   font-style: oblique;
-  text-decoration: 'underline';
 `;
 
 const Underline = styled.img`
