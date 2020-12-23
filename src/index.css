@@ -19,6 +19,8 @@ code {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(800%);
+    transform: translateY(620%);
+    position: relative;
+    display: none;
   }
 }

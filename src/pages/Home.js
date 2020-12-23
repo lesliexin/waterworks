@@ -1,7 +1,8 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
-import letitout from "../assets/Letitout.svg";
+import underline from "../assets/Underline.svg";
+import arrow from "../assets/Arrow.svg";
 import e5 from "../assets/E5.png";
 import tear from "../assets/tear.svg";
 import "../assets/fonts.css";
@@ -12,7 +13,7 @@ const Container = styled.div`
   height: 100vh;
   width: 100vw;
   background-color: #14161b;
-  overflow: "hidden";
+  overflow: hidden;
 `;
 
 const LeftEye = styled.div`
@@ -40,6 +41,13 @@ const RightEye = styled.div`
   text-decoration: 'underline';
 `;
 
+const Underline = styled.img`
+  position: absolute;
+  top: 8px;
+  left: -14px;
+  z-index: 2;
+`;
+
 
 const Mouth = styled.div`
   position: absolute;
@@ -57,10 +65,11 @@ const Mouth = styled.div`
 const Tear = styled.div`
   position: absolute;
   top: 200px;
-  left: 536px;
+  left: 580px;
   width: 12vw;
   z-index: 1;
-  animation: 3s ease-out 1.2s 1 forwards cry;
+  animation: 3s ease-out 1.8s 1 forwards cry;
+  overflow: hidden;
 `;
 
 
@@ -75,6 +84,13 @@ const PrimaryCTA = styled.div`
     font-size: 20px;
     letter-spacing: 2px;
     font-style: oblique;
+`;
+
+const Arrow = styled.img`
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  z-index: 2;
 `;
 
 const E5 = styled.img`
@@ -127,6 +143,7 @@ export function Home() {
             </textPath>
           </text>
           </svg>
+          <Underline src={underline} alt="Underline"/>
           </Link>
           </RightEye>
 
@@ -135,7 +152,7 @@ export function Home() {
           </Tear>
 
           <Mouth>
-          <svg width='1300px' height='780px'>
+          <svg width='1300px' height='480px'>
             <defs>
             <path id='mouth' d='M2.45136 208.419C157.866 87.9182 315.472 17.8286 596 67C876.528 116.171 1005 224.5 1153 349.5'/>
             </defs>
@@ -148,7 +165,7 @@ export function Home() {
           </Mouth>
 
           <PrimaryCTA>
-            <Link src={letitout} alt="Entry Link" onClick={() => {history.push("/map")}}>
+            <Link alt="Entry Link" onClick={() => {history.push("/map")}}>
             <svg width='200px' height='90px'>
               <defs>
               <path id='enter' d='M2.5 0.5C25.5 30.5 71.6784 62.9674 103.5 71C155 84 198.417 79.8595 265.5 62'/>
@@ -159,6 +176,7 @@ export function Home() {
               </textPath>
             </text>
             </svg>
+            <Arrow src={arrow} alt="Arrow"/>
             </Link>
           </PrimaryCTA>
 
