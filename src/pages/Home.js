@@ -155,9 +155,9 @@ export function Home() {
             <defs>
             <path id='mouth' d='M2.45136 208.419C157.866 87.9182 315.472 17.8286 596 67C876.528 116.171 1005 224.5 1153 349.5'/>
             </defs>
-          <text x='12' fill='#FFFFFF'>
+          <text x='36' fill='#FFFFFF'>
             <textPath xlinkHref='#mouth' >
-            EMOTIONS CAN BE DIFFICULT TO NAVIGATE, BUT HERE ARE SOME LANDMARKS FROM ALL ACROSS CAMPUS.
+            EMOTIONS CAN BE DIFFICULT TO NAVIGATE, SO LET'S START WITH SOME LANDMARKS ACROSS CAMPUS.
             </textPath>
           </text>
           </svg>
