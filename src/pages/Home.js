@@ -2,7 +2,6 @@ import React from 'react';
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import letitout from "../assets/Letitout.svg";
-import face from "../assets/face.svg";
 import iaq from "../assets/IAQ.svg";
 import e5 from "../assets/E5.png";
 import tear from "../assets/tear.svg";
@@ -14,12 +13,13 @@ const Container = styled.div`
   height: 100vh;
   width: 100vw;
   background-color: #14161b;
+  overflow: "hidden";
 `;
 
 const LeftEye = styled.div`
   position: absolute;
   top: 100px;
-  left: 340px;
+  left: 360px;
   z-index: 1;
 
   font-family: 'Roboto Mono', monospace;
@@ -31,7 +31,7 @@ const LeftEye = styled.div`
 const RightEye = styled.div`
   position: absolute;
   top: 220px;
-  left: 760px;
+  left: 780px;
   z-index: 1;
 
   font-family: 'Roboto Mono', monospace;
@@ -44,23 +44,15 @@ const RightEye = styled.div`
 
 const Mouth = styled.div`
   position: absolute;
-  top: 320px;
+  top: 340px;
   left: 0px;
   z-index: 1;
 
   font-family: 'Roboto Mono', monospace;
   font-size: 21px;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
   font-style: oblique;
-  text-decoration: underline;
-`;
-
-const Face = styled.div`
-  position: absolute;
-  top: 90px;
-  left: 0;
-  width: 80vw;
-  z-index: 1;
+  text-decoration: "underline";
 `;
 
 
@@ -82,9 +74,14 @@ const IAQ = styled.div`
 
 const PrimaryCTA = styled.div`
     position: absolute;
-    top: 700px;
-    left: 1060px;
+    top: 670px;
+    left: 1130px;
     z-index: 1;
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 21px;
+    letter-spacing: 2px;
+    font-style: oblique;
 `;
 
 const E5 = styled.img`
@@ -113,20 +110,18 @@ export function Home() {
     const history = useHistory();
     return (
         <Container>
-
           <LeftEye>
           <svg width='300px'>
             <defs>
             <path id='lefteye' d='M17.1304,0.302002C14.9749,61.3861 53.5336,120 118.569,129.474C183.605,138.949 227.368,107.839 245.386,53.5898'/>
             </defs>
-          <text x='2' fill='#FFFFFF'>
+          <text x='10' fill='#FFFFFF'>
             <textPath xlinkHref='#lefteye' >
             WELCOME TO WATERWORKS
             </textPath>
           </text>
           </svg>
           </LeftEye>
-
 
           <RightEye>
           <Link>
@@ -147,25 +142,32 @@ export function Home() {
             <img src={tear} alt="Tear" />
           </Tear>
 
-          <IAQ>
-            <Link src={iaq} alt="Infrequently Asked Questions" />
-          </IAQ>
-
           <Mouth>
-          <svg width='100vw' height='780px'>
+          <svg width='1300px' height='780px'>
             <defs>
-            <path id='mouth' d='M2.45136 228.419C157.866 107.918 265.228 20.6277 537.472 58.3286C809.717 96.0295 1001.66 203.214 1153 369.5'/>
+            <path id='mouth' d='M2.45136 208.419C157.866 87.9182 315.472 17.8286 596 67C876.528 116.171 1005 224.5 1153 349.5'/>
             </defs>
-          <text x='2' fill='#FFFFFF'>
+          <text x='12' fill='#FFFFFF'>
             <textPath xlinkHref='#mouth' >
-            EMOTIONS CAN BE DIFFICULT TO NAVIGATE, BUT YOU'VE GOT GUIDANCE FROM ALL ACROSS CAMPUS.
+            EMOTIONS CAN BE DIFFICULT TO NAVIGATE, BUT HERE ARE SOME LANDMARKS ALL ACROSS CAMPUS.
             </textPath>
           </text>
           </svg>
           </Mouth>
 
           <PrimaryCTA>
-            <Link src={letitout} alt="Entry Link" onClick={() => {history.push("/map")}}/>
+            <Link src={letitout} alt="Entry Link" onClick={() => {history.push("/map")}}>
+            <svg width='200px' height='90px'>
+              <defs>
+              <path id='enter' d='M2.5 0.5C25.5 30.5 71.6784 62.9674 103.5 71C155 84 198.417 79.8595 265.5 62'/>
+              </defs>
+            <text x='20' fill='#F2874F'>
+              <textPath xlinkHref='#enter' >
+              TAKE ME THERE
+              </textPath>
+            </text>
+            </svg>
+            </Link>
           </PrimaryCTA>
 
           <E5 src={e5} alt="E5" />
