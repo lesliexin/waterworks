@@ -7,8 +7,6 @@ import e5 from "../assets/E5.png";
 import tear from "../assets/tear.svg";
 import "../assets/fonts.css";
 
-
-
 const Container = styled.div`
   height: 100vh;
   width: 100vw;
@@ -21,7 +19,6 @@ const LeftEye = styled.div`
   top: 100px;
   left: 360px;
   z-index: 1;
-
   font-family: 'Roboto Mono', monospace;
   font-size: 20px;
   letter-spacing: 3px;
@@ -33,7 +30,6 @@ const RightEye = styled.div`
   top: 210px;
   left: 780px;
   z-index: 2;
-
   font-family: 'Roboto Mono', monospace;
   font-size: 20px;
   letter-spacing: 2.5px;
@@ -53,7 +49,6 @@ const Mouth = styled.div`
   top: 340px;
   left: 0px;
   z-index: 1;
-
   font-family: 'Roboto Mono', monospace;
   font-size: 20px;
   letter-spacing: 2px;
@@ -77,7 +72,6 @@ const PrimaryCTA = styled.div`
     top: 680px;
     left: 1140px;
     z-index: 2;
-
     font-family: 'Roboto Mono', monospace;
     font-weight: 600;
     font-size: 20px;
@@ -104,14 +98,11 @@ const E5 = styled.img`
 
 const Link = styled.div`
     cursor: cell;
-
     &:hover {
       border: 1px solid rgb(127, 0, 0, 0);
       opacity: 80%;
-
     }
 `;
-
 
 export function Home() {
     const history = useHistory();
