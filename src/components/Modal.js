@@ -1,12 +1,25 @@
 import React from 'react';
 import styled from "styled-components";
+import { ReactComponent as StreetLamp} from "../assets/streetlamp.svg";
+import "../assets/fonts.css";
 
 const Container = styled.div`
-  height: 80vh;
+  height: 60vw;
   width: 80vw;
   position: absolute;
   z-index: 1000;
-  background-color: #F3F3F3;
+  background-color: #000000;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+
+const TextContainer = styled.div`
+  height: 80%;
+  width: 80%;
+  z-index: 1000;
   display: flex;
   flex-direction: column;
 `;
@@ -24,31 +37,43 @@ const Close = styled.button`
 `;
 
 const Story = styled.p`
-    font-size: 18px;
-    font-family: Roboto;
+    font-family: Anonymous Pro;
+    font-style: normal;
     font-weight: normal;
-    line-height: 24px;
-    text-align: left;
-    color: ##14161b;
-    margin: 0;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+    width: 50%;
+`;
+
+const StyledStreetLamp = styled(StreetLamp)`
+    height: 60vw;
+    width: 80vw;
+    position: absolute;
+    z-index: 1500;
 `;
 
 const Location = styled.p`
-    font-size: 16px;
-    font-family: Roboto;
-    font-weight: normal;
-    line-height: 20px;
+    font-family: Anonymous Pro;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
     text-align: left;
-    color: ##14161b;
+    color: #F2874F;
     margin: 0;
 `;
 
 export function Modal(props) {
     return (
         <Container>
-           <Close onClick={props.handleClick}>x</Close>
-            <Story>{props.storyInfo.story ?? ""}</Story>
-            <Location>{props.storyInfo.location ?? ""}</Location>
+           {/* <Close onClick={props.handleClick}>x</Close> */}
+           <TextContainer>
+               <Story>{props.storyInfo.story ?? ""}</Story>
+               <Location>{props.storyInfo.location ?? ""}</Location>
+           </TextContainer>
+           <StyledStreetLamp/>
         </Container>
     );
 };

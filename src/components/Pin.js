@@ -6,8 +6,8 @@ import { Marker } from "react-leaflet";
 
 export function Pin(props) {
     const icon = new L.Icon({
-        iconUrl: scribble,
-        iconRetinaUrl: scribble,
+        iconUrl: pinMarker,
+        iconRetinaUrl: pinMarker,
         iconAnchor: [0, 0],
         shadowUrl: null,
         shadowSize: null,
