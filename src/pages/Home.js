@@ -133,7 +133,7 @@ export function Home() {
 
           <RightEye>
           <Link>
-          <svg width='340px' height='200px'>
+          <svg width='280px' height='180px'>
             <defs>
             <path id='righteye' d='M25.8062,0.993164C19.9115,60.6523 38.4392,116.744 106.432,145.014C174.424,173.283 248.059,136.319 284.586,85.7286'/>
             </defs>
