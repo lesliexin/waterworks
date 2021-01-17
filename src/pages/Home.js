@@ -14,25 +14,33 @@ const Container = styled.div`
   overflow: hidden;
 `;
 
+const Face = styled.div`
+  position: absolute;
+  margin-top: 6vh;
+  height: 560px;
+  width: 100vw;
+  overflow: hidden;
+`;
+
 const LeftEye = styled.div`
   position: absolute;
-  top: 100px;
-  left: 360px;
+  top: 0px;
+  left: 300px;
   z-index: 1;
   font-family: 'Roboto Mono', monospace;
-  font-size: 20px;
-  letter-spacing: 3px;
+  font-size: 18px;
+  letter-spacing: 2.8px;
   font-style: oblique;
 `;
 
 const RightEye = styled.div`
   position: absolute;
-  top: 210px;
-  left: 780px;
+  top: 90px;
+  left: 700px;
   z-index: 2;
   font-family: 'Roboto Mono', monospace;
-  font-size: 20px;
-  letter-spacing: 2.5px;
+  font-size: 18px;
+  letter-spacing: 2px;
   font-style: oblique;
 `;
 
@@ -46,20 +54,20 @@ const Underline = styled.img`
 
 const Mouth = styled.div`
   position: absolute;
-  top: 340px;
+  top: 220px;
   left: 0px;
   z-index: 1;
   font-family: 'Roboto Mono', monospace;
-  font-size: 20px;
-  letter-spacing: 2px;
+  font-size: 18px;
+  letter-spacing: 1px;
   font-style: oblique;
 `;
 
 
 const Tear = styled.div`
   position: absolute;
-  top: 200px;
-  left: 580px;
+  top: 100px;
+  left: 500px;
   width: 12vw;
   z-index: 1;
   animation: 3s ease-out 1.8s 1 forwards cry;
@@ -69,12 +77,12 @@ const Tear = styled.div`
 
 const PrimaryCTA = styled.div`
     position: absolute;
-    top: 680px;
-    left: 1140px;
+    top: 476px;
+    left: 950px;
     z-index: 2;
     font-family: 'Roboto Mono', monospace;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 2px;
     font-style: oblique;
 `;
@@ -91,6 +99,7 @@ const E5 = styled.img`
   right: 0;
   top: 5vh;
   height: 90vh;
+  min-height: 500px;
   z-index: 0;
   opacity: 50%;
 `;
@@ -108,10 +117,11 @@ export function Home() {
     const history = useHistory();
     return (
         <Container>
+        <Face>
           <LeftEye>
           <svg width='300px'>
             <defs>
-            <path id='lefteye' d='M17.1304,0.302002C14.9749,61.3861 53.5336,120 118.569,129.474C183.605,138.949 227.368,107.839 245.386,53.5898'/>
+            <path id='lefteye' d='M15.3306,0.301758C13.4663,53.1349 46.8166,103.831 103.068,112.026C159.319,120.221 197.17,93.313 212.754,46.3916'/>
             </defs>
           <text x='10' fill='#FFFFFF'>
             <textPath xlinkHref='#lefteye' >
@@ -125,9 +135,9 @@ export function Home() {
           <Link>
           <svg width='340px' height='200px'>
             <defs>
-            <path id='righteye' d='M29.9248,1C23.1095,69.9761 44.5307,134.828 123.141,167.512C201.752,200.197 286.887,157.46 329.118,98.9685'/>
+            <path id='righteye' d='M25.8062,0.993164C19.9115,60.6523 38.4392,116.744 106.432,145.014C174.424,173.283 248.059,136.319 284.586,85.7286'/>
             </defs>
-          <text x='10' fill='#FFFFFF'>
+          <text x='8' fill='#FFFFFF'>
             <textPath xlinkHref='#righteye' >
             INFREQUENTLY ASKED QUESTIONS
             </textPath>
@@ -142,11 +152,11 @@ export function Home() {
           </Tear>
 
           <Mouth>
-          <svg width='1300px' height='480px'>
+          <svg width='1000px' height='300px'>
             <defs>
-            <path id='mouth' d='M2.45136 208.419C157.866 87.9182 315.472 17.8286 596 67C876.528 116.171 1005 224.5 1153 349.5'/>
+            <path id='mouth' d='M2.32053 180.132C136.743 75.9072 273.06 15.285 515.695 57.8145C758.331 100.344 869.45 194.04 997.458 302.156'/>
             </defs>
-          <text x='36' fill='#FFFFFF'>
+          <text x='12' fill='#FFFFFF'>
             <textPath xlinkHref='#mouth' >
             EMOTIONS CAN BE DIFFICULT TO NAVIGATE, SO LET'S START WITH SOME LANDMARKS ACROSS CAMPUS.
             </textPath>
@@ -158,9 +168,9 @@ export function Home() {
             <Link alt="Entry Link" onClick={() => {history.push("/map")}}>
             <svg width='200px' height='90px'>
               <defs>
-              <path id='enter' d='M2.5 0.5C25.5 30.5 71.6784 62.9674 103.5 71C155 84 198.417 79.8595 265.5 62'/>
+              <path id='enter' d='M0.924805 1C20.864 26.7386 60.897 54.5941 88.4837 61.4857C133.13 72.6391 170.769 69.0867 228.925 53.7641'/>
               </defs>
-            <text x='20' fill='#F2874F'>
+            <text x='24' fill='#F2874F'>
               <textPath xlinkHref='#enter' >
               TAKE A TOUR
               </textPath>
@@ -169,6 +179,7 @@ export function Home() {
             <Arrow src={arrow} alt="Arrow"/>
             </Link>
           </PrimaryCTA>
+          </Face>
 
           <E5 src={e5} alt="E5" />
         </Container>
