@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home, UWMap } from "./pages";
+import { Home, UWMap, Mobile } from "./pages";
 
 function App() {
   return (
@@ -11,6 +11,9 @@ function App() {
         </Route>
         <Route path="/map">
           <UWMap />
+        </Route>
+        <Route path="/mobile">
+          <Mobile />
         </Route>
       </Switch>
     </Router>
