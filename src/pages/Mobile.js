@@ -1,5 +1,4 @@
 import React from 'react';
-import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import "../assets/fonts.css";
 
@@ -57,18 +56,17 @@ const Link = styled.div`
 `;
 
 export function Mobile() {
-      const history = useHistory();
   return (
     <Container>
-    <Title>
-    we're not great at responsive design.
-    </Title>
-    <Body>
-    Mind using a laptop or desktop?
-    <Link>
-    or, read more about this project
-    </Link>
-    </Body>
+      <Title>
+        we're not great at responsive design.
+      </Title>
+      <Body>
+        Mind using a laptop or desktop?
+        <Link>
+           or, read more about this project
+        </Link>
+      </Body>
     </Container>
   );
 };
