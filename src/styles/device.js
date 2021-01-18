@@ -19,4 +19,3 @@ const size = {
     desktop: `(max-width: ${size.desktop})`,
     desktopL: `(max-width: ${size.desktopL})`,
   };
-  

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import { ReactComponent as StreetLamp} from "../assets/streetlamp.svg";
 import { ReactComponent as Close} from "../assets/close.svg";
 import { device } from "../styles";
 import "../assets/fonts.css";
@@ -29,6 +28,7 @@ const TextContainer = styled.div`
   z-index: 1000;
   display: flex;
   flex-direction: column;
+  justify-content: ${props => (props.align)};
 `;
 
 const CloseContainer = styled(Close)`
@@ -51,27 +51,49 @@ const CloseContainer = styled(Close)`
 `;
 
 const Story = styled.p`
-    font-family: Anonymous Pro;
+    font-family: 'Anonymous Pro', monospace;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 32px;
     color: #FFFFFF;
-    margin-bottom: 60px;
-    width: 50%;
+    margin-bottom: 8%;
+    width: ${props => (props.width)};
 
     @media ${device.laptopL} {
-        font-size: px;
-        line-height: 21px;
+        font-size: 18px;
+        line-height: 26px;
     }
 
     @media ${device.tablet} {
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 16px;
+        line-height: 20px;
     }
 `;
 
-const StyledStreetLamp = styled(StreetLamp)`
+const Location = styled.p`
+    font-family: 'Anonymous Pro', monospace;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: left;
+    color: #F2874F;
+    margin: 0;
+    width: ${props => (props.width ? props.width : '50%')};
+
+    @media ${device.laptopL} {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    @media ${device.tablet} {
+        font-size: 16px;
+        line-height: 20px;
+    }
+`;
+
+const StyledIllustration = styled.img`
     height: 60vw;
     width: 80vw;
     position: absolute;
@@ -83,36 +105,16 @@ const StyledStreetLamp = styled(StreetLamp)`
     }
 `;
 
-const Location = styled.p`
-    font-family: Anonymous Pro;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: left;
-    color: #F2874F;
-    margin: 0;
+export function Modal({ storyInfo, handleClick }) {
 
-    @media ${device.laptopL} {
-        font-size: 18px;
-        line-height: 21px;
-    }
-
-    @media ${device.tablet} {
-        font-size: 14px;
-        line-height: 16px;
-    }
-`;
-
-export function Modal(props) {
     return (
         <Container>
-            <CloseContainer onClick={props.handleClick}/>
-           <TextContainer>
-               <Story>{props.storyInfo.story ?? ""}</Story>
-               <Location>{props.storyInfo.location ?? ""}</Location>
+            <CloseContainer onClick={handleClick}/>
+           <TextContainer align={storyInfo.align}>
+               <Story width={storyInfo.width}>{storyInfo.story ?? ""}</Story>
+               <Location width={storyInfo.width}>{storyInfo.location ?? ""}</Location>
            </TextContainer>
-           <StyledStreetLamp/>
+           {storyInfo.id && <StyledIllustration src={`/illustrations/${storyInfo.id}.svg`}/>}
         </Container>
     );
 };
