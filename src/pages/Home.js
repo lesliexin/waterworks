@@ -66,7 +66,7 @@ const Mouth = styled.div`
 
 const Tear = styled.div`
   position: absolute;
-  top: 100px;
+  top: 120px;
   left: 500px;
   width: 12vw;
   z-index: 1;
@@ -97,8 +97,8 @@ const Arrow = styled.img`
 const E5 = styled.img`
   position: absolute;
   right: 0;
-  top: 5vh;
-  height: 90vh;
+  top: 0;
+  height: 100vh;
   min-height: 500px;
   z-index: 0;
   opacity: 50%;
@@ -139,17 +139,13 @@ export function Home() {
             </defs>
           <text x='8' fill='#FFFFFF'>
             <textPath xlinkHref='#righteye' >
-            INFREQUENTLY ASKED QUESTIONS
+            WHAT IS THIS PROJECT ABOUT?
             </textPath>
           </text>
           </svg>
           <Underline src={underline} alt="Underline"/>
           </Link>
           </RightEye>
-
-          <Tear>
-            <img src={tear} alt="Tear" />
-          </Tear>
 
           <Mouth>
           <svg width='1000px' height='300px'>
@@ -181,6 +177,9 @@ export function Home() {
           </PrimaryCTA>
           </Face>
 
+          <Tear>
+            <img src={tear} alt="Tear" />
+          </Tear>
           <E5 src={e5} alt="E5" />
         </Container>
     );
