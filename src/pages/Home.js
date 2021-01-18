@@ -48,7 +48,7 @@ const Underline = styled.img`
   position: absolute;
   top: 8px;
   left: -14px;
-  z-index: 2;
+  z-index: 1;
 `;
 
 
@@ -101,7 +101,7 @@ const E5 = styled.img`
   height: 100vh;
   min-height: 500px;
   z-index: 0;
-  opacity: 50%;
+  opacity: 60%;
 `;
 
 
@@ -110,6 +110,10 @@ const Link = styled.div`
     &:hover {
       border: 1px solid rgb(127, 0, 0, 0);
       opacity: 80%;
+    }
+
+    .a{
+      cursor: cell;
     }
 `;
 
@@ -132,6 +136,7 @@ export function Home() {
           </LeftEye>
 
           <RightEye>
+          <a href="https://docs.google.com/document/d/1BLiDYif7sKWhhHMilXTnNVRLqB9e47-EDg3NPijdsVU/edit" target="_blank">
           <Link>
           <svg width='280px' height='180px'>
             <defs>
@@ -139,12 +144,13 @@ export function Home() {
             </defs>
           <text x='8' fill='#FFFFFF'>
             <textPath xlinkHref='#righteye' >
-            WHAT IS THIS PROJECT ABOUT?
+             WHAT IS THIS PROJECT ABOUT?
             </textPath>
           </text>
           </svg>
           <Underline src={underline} alt="Underline"/>
           </Link>
+          </a>
           </RightEye>
 
           <Mouth>
