@@ -74,8 +74,13 @@ export function UWMap() {
               <Pin
                 key={key}
                 position={[pin.lat, pin.lng]}
-                story={pin.story}
-                location={pin.location}
+                storyInfo={{
+                  id: pin.id,
+                  story: pin.story,
+                  location: pin.location,
+                  width: pin.width ?? "50%",
+                  align: pin.align ?? "center"
+                }}
                 handleClick={handleOpenModal}
               />
             );

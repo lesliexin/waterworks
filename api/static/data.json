@@ -2,8 +2,9 @@
   "featuredStories": [
     {
       "id": 1,
-      "story": "Dana porter library, during my first final exams in 1A. I was really stressed, overwhelmed and lonely. Around that time was the lowest point thus far in my uni career. Seeing people I knew was not helpful. Being really alone and everyone grinding during this time was not helpful. I didn’t really come out of this depression until the next summer (this happened in winter so it may have been seasonal too) after I went to therapy. The therapy was funded by my scholarship program.",
+      "story": "During my first final exams in 1A. I was really stressed, overwhelmed and lonely. Around that time was the lowest point thus far in my uni career. Seeing people I knew was not helpful. Being really alone and everyone grinding during this time was not helpful. I didn’t really come out of this depression until the next summer (this happened in winter so it may have been seasonal too) after I went to therapy. The therapy was funded by my scholarship program.",
       "location": "Dana Porter Library",
+      "width": "90%",
       "lat": 43.4697210504004,
       "lng": -80.54239386
     },
@@ -11,6 +12,8 @@
       "id": 2,
       "story": "It was the day that prof. Igor Ivkovic died. Being on a Zoom call where people shared stories helpful in remembering him for the great man he was, and it ended up being good for me, but man did it hurt.",
       "location": "Wilmot Court South floor 3",
+      "width": "100%",
+      "align": "flex-start",
       "lat": 43.47081263,
       "lng": -80.53639076
     },
@@ -18,6 +21,7 @@
       "id": 3,
       "story": "I was in 2A and still recovering from a severe episode of depression and anxiety a few months prior. I was in the process of adjusting to antidepressants and would occasionally burst into tears arbitrarily. I am happy to say though that once I fully adjusted to my meds, they have made a world of positive difference for me.",
       "location": "QNC First Floor Bathroom",
+      "width": "70%",
       "lat": 43.471008614,
       "lng": -80.54344091
     },
@@ -25,6 +29,7 @@
       "id": 4,
       "story": "I have Generalized Anxiety Disorder and Depression. I was really home-sick and dealing with being continually harassed by another student. I ultimately had a mental breakdown and almost dropped out of university since I felt incredibly ill and unsafe. I spent a lot of time seeing counselling and health services. What ultimately helped was professional support, my loved ones, and starting antidepressants. As for how I felt physically, I felt nauseous constantly and could barely eat for weeks. I had headaches and felt too ill to go to class for roughly 2 weeks. I often woke up to panic attacks and trying to rest only heightened my anxiety. My chest hurt and I couldn't sit still.",
       "location": "Village 1 West 5 Tower 3rd Floor",
+      "width": "100%",
       "lat": 43.47212743,
       "lng": -80.55085139
     },
@@ -39,6 +44,7 @@
       "id": 6,
       "story": "I had just gotten two large pieces of bad news and on my way to write a midterm. The first was a disappointing grade on a midterm I thought I did well on. The second was much worse, the fact that my dad lost his job, which put my family into a much less financially secure position",
       "location": "B1 1st floor bathrooms across from QNC entrance",
+      "width": "55%",
       "lat": 43.47099556,
       "lng": -80.54355677
     },
@@ -53,6 +59,8 @@
       "id": 8,
       "story": "Our prof had just gone over midterm material for one of my classes in first year and I had a panic attack because there was so much to know and I didn't know how I would ever learn it (which to be fair, there was so much material that we were only expected to know 30% of it), my friends came and sat with me, talked calmly, gave me a hug. We're like six weeks into first year so they were all brand new friends and I hadn't told them about my panic attacks and they all sat there and supported me and I really appreciated that.",
       "location": "Basement of MC",
+      "width": "100%",
+      "align": "flex-start",
       "lat": 43.47220585,
       "lng": -80.54378112
     },
@@ -102,6 +110,7 @@
       "id": 15,
       "story": "I cried my eyes out here after hardships with first semester & family life. I also had a good cry at the sci link, on a bench near B1. I had just found out my OSAP would be basically nothing due to my stepdad accessing his pension early to save the family home from power of sale and thought I would have to drop out due to finances. Each time I felt like the world was ending and I was a failure. That I had no future, there was angry, sadness, bitterness, jealousy. The entire range of emotions.",
       "location": "Walkway between the west side of PAC and the SLC doors with some beautiful old trees.",
+      "width": "100%",
       "lat": 43.47192504,
       "lng": -80.54570752
     },

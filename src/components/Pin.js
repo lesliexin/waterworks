@@ -4,10 +4,10 @@ import pinMarker from "../assets/pin.svg";
 import scribble from "../assets/scribble.svg";
 import { Marker } from "react-leaflet";
 
-export function Pin(props) {
+export function Pin({ position, storyInfo, handleClick}) {
     const icon = new L.Icon({
-        iconUrl: scribble,
-        iconRetinaUrl: scribble,
+        iconUrl: pinMarker,
+        iconRetinaUrl: pinMarker,
         iconAnchor: [0, 0],
         shadowUrl: null,
         shadowSize: null,
@@ -16,13 +16,16 @@ export function Pin(props) {
     });
   return (
     <Marker
-      position={props.position}
+      position={position}
       icon={icon}
       zIndexOffset={1000}
       eventHandlers={{
-        click: (e) => {props.handleClick({
-            story: props.story,
-            location: props.location
+        click: (e) => {handleClick({
+            id: storyInfo.id,
+            story: storyInfo.story,
+            location: storyInfo.location,
+            width: storyInfo.width,
+            align: storyInfo.align
         })}
       }}
     />

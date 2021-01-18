@@ -1,54 +1,120 @@
 import React from 'react';
 import styled from "styled-components";
+import { ReactComponent as Close} from "../assets/close.svg";
+import { device } from "../styles";
+import "../assets/fonts.css";
 
 const Container = styled.div`
-  height: 80vh;
+  height: 60vw;
   width: 80vw;
   position: absolute;
   z-index: 1000;
-  background-color: #F3F3F3;
+  background-color: #000000;
+  opacity: 0.8;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @media (orientation:landscape) {
+    height: 70vh;
+    width: 100vh;
+  }
 `;
 
-const Close = styled.button`
+const TextContainer = styled.div`
+  height: 80%;
+  width: 80%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: ${props => (props.align)};
+`;
+
+const CloseContainer = styled(Close)`
     cursor: pointer;
-    height: 10vh;
     width: 10vw;
-    font-size: 38px;
-    align-self: flex-end;
+    z-index: 5000;
+    position: absolute;
+    top: 41.3vw;
+    right: -7vw;
+
+    @media (orientation:landscape) {
+        top: 51vh;
+        right: -8.2vh;
+        width: 10.5vh;
+    }
 
     &:hover {
-        background-color: #EAFCFE;
-    }
+        color: #F2874F;
+      } 
 `;
 
 const Story = styled.p`
-    font-size: 18px;
-    font-family: Roboto;
+    font-family: 'Anonymous Pro', monospace;
+    font-style: normal;
     font-weight: normal;
-    line-height: 24px;
-    text-align: left;
-    color: ##14161b;
-    margin: 0;
+    font-size: 22px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 8%;
+    width: ${props => (props.width)};
+
+    @media ${device.laptopL} {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    @media ${device.tablet} {
+        font-size: 16px;
+        line-height: 20px;
+    }
 `;
 
 const Location = styled.p`
-    font-size: 16px;
-    font-family: Roboto;
-    font-weight: normal;
-    line-height: 20px;
+    font-family: 'Anonymous Pro', monospace;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
     text-align: left;
-    color: ##14161b;
+    color: #F2874F;
     margin: 0;
+    width: ${props => (props.width ? props.width : '50%')};
+
+    @media ${device.laptopL} {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    @media ${device.tablet} {
+        font-size: 16px;
+        line-height: 20px;
+    }
 `;
 
-export function Modal(props) {
+const StyledIllustration = styled.img`
+    height: 60vw;
+    width: 80vw;
+    position: absolute;
+    z-index: 1500;
+
+    @media (orientation:landscape) {
+        height: 70vh;
+        width: 100vh;
+    }
+`;
+
+export function Modal({ storyInfo, handleClick }) {
+
     return (
         <Container>
-           <Close onClick={props.handleClick}>x</Close>
-            <Story>{props.storyInfo.story ?? ""}</Story>
-            <Location>{props.storyInfo.location ?? ""}</Location>
+            <CloseContainer onClick={handleClick}/>
+           <TextContainer align={storyInfo.align}>
+               <Story width={storyInfo.width}>{storyInfo.story ?? ""}</Story>
+               <Location width={storyInfo.width}>{storyInfo.location ?? ""}</Location>
+           </TextContainer>
+           {storyInfo.id && <StyledIllustration src={`/illustrations/${storyInfo.id}.svg`}/>}
         </Container>
     );
 };
