@@ -1,0 +1,1550 @@
+{
+  "featuredStories": [
+    {
+      "id": 1,
+      "story": "During my first final exams in 1A. I was really stressed, overwhelmed and lonely. Around that time was the lowest point thus far in my uni career. Seeing people I knew was not helpful. Being really alone and everyone grinding during this time was not helpful. I didn’t really come out of this depression until the next summer (this happened in winter so it may have been seasonal too) after I went to therapy. The therapy was funded by my scholarship program.",
+      "location": "Dana Porter Library",
+      "width": "90%",
+      "lat": 43.4697210504004,
+      "lng": -80.54239386
+    },
+    {
+      "id": 2,
+      "story": "It was the day that prof. Igor Ivkovic died. Being on a Zoom call where people shared stories helpful in remembering him for the great man he was, and it ended up being good for me, but man did it hurt.",
+      "location": "Wilmot Court South floor 3",
+      "width": "100%",
+      "align": "flex-start",
+      "lat": 43.47081263,
+      "lng": -80.53639076
+    },
+    {
+      "id": 3,
+      "story": "I was in 2A and still recovering from a severe episode of depression and anxiety a few months prior. I was in the process of adjusting to antidepressants and would occasionally burst into tears arbitrarily. I am happy to say though that once I fully adjusted to my meds, they have made a world of positive difference for me.",
+      "location": "QNC First Floor Bathroom",
+      "width": "70%",
+      "lat": 43.471008614,
+      "lng": -80.54344091
+    },
+    {
+      "id": 4,
+      "story": "I have Generalized Anxiety Disorder and Depression. I was really home-sick and dealing with being continually harassed by another student. I ultimately had a mental breakdown and almost dropped out of university since I felt incredibly ill and unsafe. I spent a lot of time seeing counselling and health services. What ultimately helped was professional support, my loved ones, and starting antidepressants. As for how I felt physically, I felt nauseous constantly and could barely eat for weeks. I had headaches and felt too ill to go to class for roughly 2 weeks. I often woke up to panic attacks and trying to rest only heightened my anxiety. My chest hurt and I couldn't sit still.",
+      "location": "Village 1 West 5 Tower 3rd Floor",
+      "width": "100%",
+      "lat": 43.47212743,
+      "lng": -80.55085139
+    },
+    {
+      "id": 5,
+      "story": "It was a late night walking home from some tutorial, the orange florescent lighting in the rock garden reminded me of the street lamps at home. I missed home.",
+      "location": "Rock garden",
+      "lat": 43.4715505,
+      "lng": -80.54361584
+    },
+    {
+      "id": 6,
+      "story": "I had just gotten two large pieces of bad news and on my way to write a midterm. The first was a disappointing grade on a midterm I thought I did well on. The second was much worse, the fact that my dad lost his job, which put my family into a much less financially secure position",
+      "location": "B1 1st floor bathrooms across from QNC entrance",
+      "width": "55%",
+      "lat": 43.47099556,
+      "lng": -80.54355677
+    },
+    {
+      "id": 7,
+      "story": "Met Chris Hadfield",
+      "location": "IQC lecture hall",
+      "lat": 43.47118957,
+      "lng": -80.54456515
+    },
+    {
+      "id": 8,
+      "story": "Our prof had just gone over midterm material for one of my classes in first year and I had a panic attack because there was so much to know and I didn't know how I would ever learn it (which to be fair, there was so much material that we were only expected to know 30% of it), my friends came and sat with me, talked calmly, gave me a hug. We're like six weeks into first year so they were all brand new friends and I hadn't told them about my panic attacks and they all sat there and supported me and I really appreciated that.",
+      "location": "Basement of MC",
+      "width": "100%",
+      "align": "flex-start",
+      "lat": 43.47220585,
+      "lng": -80.54378112
+    },
+    {
+      "id": 9,
+      "story": "Got a panic attack in DC library about a midterm, felt embarrassed to be crying in front of other people so left and cried between EIT and E3 facing the wall so people couldn't see my face. Then went for a walk in Waterloo park to calm down, listened to my favourite podcast, got a treat at Williams and felt better.",
+      "location": "DC library",
+      "lat": 43.47233019,
+      "lng": -80.54208782
+    },
+    {
+      "id": 10,
+      "story": "Menstruation",
+      "location": "QNC Floor 2 Bathroom",
+      "lat": 43.47149453,
+      "lng": -80.54400625
+    },
+    {
+      "id": 11,
+      "story": "It was a Bomber Wednesday during the spring term. I had just finished a fight with my partner at the time. We were both really drunk, mean things were said and I got super emotional and cried. The bouncer had to console me and someone gave me a cigarette.",
+      "location": "Bomber patio",
+      "lat": 43.47146938,
+      "lng": -80.54491154
+    },
+    {
+      "id": 12,
+      "story": "I got the first job offer of my entire life walking to class in Hagey Hall. I broke down in the hall out of excitement and joy, and two women rushed to comfort me. I told them that I was happy, and that I got an offer, and they both told me how happy they were for me and that I made their day!",
+      "location": "PAS halls",
+      "lat": 43.46725915,
+      "lng": -80.54260818
+    },
+    {
+      "id": 13,
+      "story": "Calculus and chemistry when I have mild number dyslexia, I think that says enough. Lots of sadness and doubt in myself, and I didn't think I deserved to go here.",
+      "location": "RCH bottom floor washroom",
+      "lat": 43.47034793,
+      "lng": -80.54064783
+    },
+    {
+      "id": 14,
+      "story": "Job rankings were due at 2pm that day and at 12pm noon i still had no idea what i was going to input",
+      "location": "E5 4th floor ",
+      "lat": 43.47283014,
+      "lng": -80.53995578
+    },
+    {
+      "id": 15,
+      "story": "I cried my eyes out here after hardships with first semester & family life. I also had a good cry at the sci link, on a bench near B1. I had just found out my OSAP would be basically nothing due to my stepdad accessing his pension early to save the family home from power of sale and thought I would have to drop out due to finances. Each time I felt like the world was ending and I was a failure. That I had no future, there was angry, sadness, bitterness, jealousy. The entire range of emotions.",
+      "location": "Walkway between the west side of PAC and the SLC doors with some beautiful old trees.",
+      "width": "100%",
+      "lat": 43.47192504,
+      "lng": -80.54570752
+    },
+    {
+      "id": 16,
+      "story": "After pulling an all-nighter and having an exhausting lab period, I was particularly sensitive to verbal criticisms from a teaching assistant.",
+      "location": "STC 5th floor",
+      "lat": 43.47085733,
+      "lng": -80.54348256
+    },
+    {
+      "id": 17,
+      "story": "I had a panic attack while writing a final exam in PAC. A very nice proctor sat with me on the stairs outside the gym while I was uncontrollably crying.",
+      "location": "PAC stairs",
+      "lat": 43.4725476,
+      "lng": -80.5462543
+    }
+  ],
+  "data": [
+    {
+      "lat": 43.47234174,
+      "lng": -80.5631959
+    },
+    {
+      "lat": 43.47030405,
+      "lng": -80.56260953
+    },
+    {
+      "lat": 43.4718606,
+      "lng": -80.56259637
+    },
+    {
+      "lat": 43.47062502,
+      "lng": -80.55845714
+    },
+    {
+      "lat": 43.47065602,
+      "lng": -80.55497366
+    },
+    {
+      "lat": 43.4705053,
+      "lng": -80.55442192
+    },
+    {
+      "lat": 43.47031519,
+      "lng": -80.55440319
+    },
+    {
+      "lat": 43.4703598,
+      "lng": -80.55428992
+    },
+    {
+      "lat": 43.47054971,
+      "lng": -80.55404906
+    },
+    {
+      "lat": 43.4707888,
+      "lng": -80.5539795
+    },
+    {
+      "lat": 43.47056876,
+      "lng": -80.55364657
+    },
+    {
+      "lat": 43.47047627,
+      "lng": -80.55345557
+    },
+    {
+      "lat": 43.46945659,
+      "lng": -80.55332969
+    },
+    {
+      "lat": 43.47128135,
+      "lng": -80.55305715
+    },
+    {
+      "lat": 43.46962794,
+      "lng": -80.55294133
+    },
+    {
+      "lat": 43.4715506,
+      "lng": -80.55274922
+    },
+    {
+      "lat": 43.47161614,
+      "lng": -80.55257813
+    },
+    {
+      "lat": 43.47152696,
+      "lng": -80.55206679
+    },
+    {
+      "lat": 43.470946,
+      "lng": -80.55149829
+    },
+    {
+      "lat": 43.47176482,
+      "lng": -80.55146546
+    },
+    {
+      "lat": 43.4709433,
+      "lng": -80.55145609
+    },
+    {
+      "lat": 43.47149779,
+      "lng": -80.55098703
+    },
+    {
+      "lat": 43.47207311,
+      "lng": -80.55090597
+    },
+    {
+      "lat": 43.47150855,
+      "lng": -80.55078537
+    },
+    {
+      "lat": 43.47181614,
+      "lng": -80.55068468
+    },
+    {
+      "lat": 43.471475,
+      "lng": -80.55065717
+    },
+    {
+      "lat": 43.47151561,
+      "lng": -80.55061189
+    },
+    {
+      "lat": 43.47188903,
+      "lng": -80.55058577
+    },
+    {
+      "lat": 43.4714238,
+      "lng": -80.55026783
+    },
+    {
+      "lat": 43.47209485,
+      "lng": -80.55002229
+    },
+    {
+      "lat": 43.47169513,
+      "lng": -80.54984818
+    },
+    {
+      "lat": 43.47169498,
+      "lng": -80.54983124
+    },
+    {
+      "lat": 43.47157383,
+      "lng": -80.54982678
+    },
+    {
+      "lat": 43.47220161,
+      "lng": -80.54936315
+    },
+    {
+      "lat": 43.47153241,
+      "lng": -80.54891468
+    },
+    {
+      "lat": 43.47144943,
+      "lng": -80.54838669
+    },
+    {
+      "lat": 43.47473535,
+      "lng": -80.54774426
+    },
+    {
+      "lat": 43.47539394,
+      "lng": -80.54773626
+    },
+    {
+      "lat": 43.47742254,
+      "lng": -80.54771586
+    },
+    {
+      "lat": 43.4738322,
+      "lng": -80.54745877
+    },
+    {
+      "lat": 43.47156069,
+      "lng": -80.54740523
+    },
+    {
+      "lat": 43.47377462,
+      "lng": -80.54719312
+    },
+    {
+      "lat": 43.46819299,
+      "lng": -80.54683618
+    },
+    {
+      "lat": 43.47414359,
+      "lng": -80.5466245
+    },
+    {
+      "lat": 43.46793043,
+      "lng": -80.54656014
+    },
+    {
+      "lat": 43.47208975,
+      "lng": -80.546497
+    },
+    {
+      "lat": 43.47142495,
+      "lng": -80.54648721
+    },
+    {
+      "lat": 43.47324675,
+      "lng": -80.54646366
+    },
+    {
+      "lat": 43.47211209,
+      "lng": -80.54639452
+    },
+    {
+      "lat": 43.47359468,
+      "lng": -80.54634832
+    },
+    {
+      "lat": 43.47256117,
+      "lng": -80.5463365
+    },
+    {
+      "lat": 43.47252728,
+      "lng": -80.54633589
+    },
+    {
+      "lat": 43.46783783,
+      "lng": -80.5462974
+    },
+    {
+      "lat": 43.47342058,
+      "lng": -80.54628794
+    },
+    {
+      "lat": 43.47351069,
+      "lng": -80.54626882
+    },
+    {
+      "lat": 43.47194704,
+      "lng": -80.54626782
+    },
+    {
+      "lat": 43.46941244,
+      "lng": -80.54618985
+    },
+    {
+      "lat": 43.47039873,
+      "lng": -80.54608236
+    },
+    {
+      "lat": 43.47350094,
+      "lng": -80.546079
+    },
+    {
+      "lat": 43.47066639,
+      "lng": -80.54604618
+    },
+    {
+      "lat": 43.47237134,
+      "lng": -80.54602378
+    },
+    {
+      "lat": 43.47170063,
+      "lng": -80.54597694
+    },
+    {
+      "lat": 43.47251954,
+      "lng": -80.54585454
+    },
+    {
+      "lat": 43.4689584,
+      "lng": -80.54578787
+    },
+    {
+      "lat": 43.46926187,
+      "lng": -80.5457454
+    },
+    {
+      "lat": 43.4729181,
+      "lng": -80.54568002
+    },
+    {
+      "lat": 43.46950135,
+      "lng": -80.5456512
+    },
+    {
+      "lat": 43.47163538,
+      "lng": -80.54548455
+    },
+    {
+      "lat": 43.46926621,
+      "lng": -80.5454676
+    },
+    {
+      "lat": 43.47160446,
+      "lng": -80.5453734
+    },
+    {
+      "lat": 43.47146174,
+      "lng": -80.54532148
+    },
+    {
+      "lat": 43.47151817,
+      "lng": -80.54531559
+    },
+    {
+      "lat": 43.4720194,
+      "lng": -80.54529607
+    },
+    {
+      "lat": 43.47185722,
+      "lng": -80.54522165
+    },
+    {
+      "lat": 43.47194549,
+      "lng": -80.54520501
+    },
+    {
+      "lat": 43.47167993,
+      "lng": -80.54520413
+    },
+    {
+      "lat": 43.47172967,
+      "lng": -80.54518123
+    },
+    {
+      "lat": 43.46920259,
+      "lng": -80.54517783
+    },
+    {
+      "lat": 43.47150269,
+      "lng": -80.54516568
+    },
+    {
+      "lat": 43.46644937,
+      "lng": -80.54506188
+    },
+    {
+      "lat": 43.47177471,
+      "lng": -80.54505674
+    },
+    {
+      "lat": 43.47087599,
+      "lng": -80.54503484
+    },
+    {
+      "lat": 43.47156457,
+      "lng": -80.54486717
+    },
+    {
+      "lat": 43.47122355,
+      "lng": -80.54474986
+    },
+    {
+      "lat": 43.47224757,
+      "lng": -80.54440949
+    },
+    {
+      "lat": 43.47227335,
+      "lng": -80.5443861
+    },
+    {
+      "lat": 43.47234583,
+      "lng": -80.54431466
+    },
+    {
+      "lat": 43.47233362,
+      "lng": -80.54431229
+    },
+    {
+      "lat": 43.47330335,
+      "lng": -80.54427682
+    },
+    {
+      "lat": 43.47231169,
+      "lng": -80.54427252
+    },
+    {
+      "lat": 43.47329617,
+      "lng": -80.54423683
+    },
+    {
+      "lat": 43.47220927,
+      "lng": -80.54423224
+    },
+    {
+      "lat": 43.47031776,
+      "lng": -80.54422871
+    },
+    {
+      "lat": 43.47329858,
+      "lng": -80.54422266
+    },
+    {
+      "lat": 43.4722614,
+      "lng": -80.54421491
+    },
+    {
+      "lat": 43.47126968,
+      "lng": -80.54416981
+    },
+    {
+      "lat": 43.4718242,
+      "lng": -80.54414624
+    },
+    {
+      "lat": 43.47179317,
+      "lng": -80.54413417
+    },
+    {
+      "lat": 43.47181743,
+      "lng": -80.54412022
+    },
+    {
+      "lat": 43.47158635,
+      "lng": -80.54411666
+    },
+    {
+      "lat": 43.47211334,
+      "lng": -80.54410771
+    },
+    {
+      "lat": 43.47316261,
+      "lng": -80.54409744
+    },
+    {
+      "lat": 43.47135821,
+      "lng": -80.54406538
+    },
+    {
+      "lat": 43.47195591,
+      "lng": -80.5440581
+    },
+    {
+      "lat": 43.47240453,
+      "lng": -80.54404091
+    },
+    {
+      "lat": 43.47232507,
+      "lng": -80.54403159
+    },
+    {
+      "lat": 43.47220298,
+      "lng": -80.54402271
+    },
+    {
+      "lat": 43.47089209,
+      "lng": -80.54401181
+    },
+    {
+      "lat": 43.47135392,
+      "lng": -80.54400357
+    },
+    {
+      "lat": 43.47228492,
+      "lng": -80.54399811
+    },
+    {
+      "lat": 43.47016685,
+      "lng": -80.54398069
+    },
+    {
+      "lat": 43.47130954,
+      "lng": -80.54397031
+    },
+    {
+      "lat": 43.47014023,
+      "lng": -80.54393374
+    },
+    {
+      "lat": 43.47057587,
+      "lng": -80.54392607
+    },
+    {
+      "lat": 43.47186107,
+      "lng": -80.54392425
+    },
+    {
+      "lat": 43.4715066,
+      "lng": -80.54392194
+    },
+    {
+      "lat": 43.47319609,
+      "lng": -80.54391894
+    },
+    {
+      "lat": 43.46962513,
+      "lng": -80.54391337
+    },
+    {
+      "lat": 43.47123888,
+      "lng": -80.5439119
+    },
+    {
+      "lat": 43.47322981,
+      "lng": -80.5438844
+    },
+    {
+      "lat": 43.47232771,
+      "lng": -80.54388095
+    },
+    {
+      "lat": 43.47180504,
+      "lng": -80.54387178
+    },
+    {
+      "lat": 43.47182834,
+      "lng": -80.54386847
+    },
+    {
+      "lat": 43.47178865,
+      "lng": -80.54384262
+    },
+    {
+      "lat": 43.47139321,
+      "lng": -80.54383398
+    },
+    {
+      "lat": 43.47130514,
+      "lng": -80.54381883
+    },
+    {
+      "lat": 43.47246984,
+      "lng": -80.54379281
+    },
+    {
+      "lat": 43.47016462,
+      "lng": -80.54378624
+    },
+    {
+      "lat": 43.47098506,
+      "lng": -80.54378107
+    },
+    {
+      "lat": 43.47249832,
+      "lng": -80.54377073
+    },
+    {
+      "lat": 43.47025881,
+      "lng": -80.54376849
+    },
+    {
+      "lat": 43.47199519,
+      "lng": -80.54376402
+    },
+    {
+      "lat": 43.47218186,
+      "lng": -80.54375446
+    },
+    {
+      "lat": 43.47056599,
+      "lng": -80.54374944
+    },
+    {
+      "lat": 43.47058537,
+      "lng": -80.54371595
+    },
+    {
+      "lat": 43.47052543,
+      "lng": -80.54371131
+    },
+    {
+      "lat": 43.47198425,
+      "lng": -80.54370676
+    },
+    {
+      "lat": 43.47204944,
+      "lng": -80.54370185
+    },
+    {
+      "lat": 43.47202864,
+      "lng": -80.54370107
+    },
+    {
+      "lat": 43.47201411,
+      "lng": -80.54366126
+    },
+    {
+      "lat": 43.47187499,
+      "lng": -80.54362847
+    },
+    {
+      "lat": 43.47053676,
+      "lng": -80.54362148
+    },
+    {
+      "lat": 43.47188484,
+      "lng": -80.54362066
+    },
+    {
+      "lat": 43.47206702,
+      "lng": -80.54360808
+    },
+    {
+      "lat": 43.47065649,
+      "lng": -80.54359064
+    },
+    {
+      "lat": 43.47188125,
+      "lng": -80.54358452
+    },
+    {
+      "lat": 43.4706432,
+      "lng": -80.54356623
+    },
+    {
+      "lat": 43.47099358,
+      "lng": -80.54355981
+    },
+    {
+      "lat": 43.47051076,
+      "lng": -80.54354052
+    },
+    {
+      "lat": 43.47201731,
+      "lng": -80.54353564
+    },
+    {
+      "lat": 43.46979762,
+      "lng": -80.5435323
+    },
+    {
+      "lat": 43.47068403,
+      "lng": -80.54350214
+    },
+    {
+      "lat": 43.47202648,
+      "lng": -80.54347476
+    },
+    {
+      "lat": 43.47268807,
+      "lng": -80.54346525
+    },
+    {
+      "lat": 43.47174672,
+      "lng": -80.5434338
+    },
+    {
+      "lat": 43.47041171,
+      "lng": -80.54343189
+    },
+    {
+      "lat": 43.47067787,
+      "lng": -80.54342819
+    },
+    {
+      "lat": 43.4698845,
+      "lng": -80.54342667
+    },
+    {
+      "lat": 43.47145862,
+      "lng": -80.54341898
+    },
+    {
+      "lat": 43.47042369,
+      "lng": -80.54341638
+    },
+    {
+      "lat": 43.47065135,
+      "lng": -80.54340871
+    },
+    {
+      "lat": 43.47142816,
+      "lng": -80.54340779
+    },
+    {
+      "lat": 43.46819094,
+      "lng": -80.54340738
+    },
+    {
+      "lat": 43.47055409,
+      "lng": -80.5434049
+    },
+    {
+      "lat": 43.46827199,
+      "lng": -80.54339918
+    },
+    {
+      "lat": 43.47070771,
+      "lng": -80.54338691
+    },
+    {
+      "lat": 43.46832083,
+      "lng": -80.54337673
+    },
+    {
+      "lat": 43.47276818,
+      "lng": -80.54336036
+    },
+    {
+      "lat": 43.4706432,
+      "lng": -80.5433588
+    },
+    {
+      "lat": 43.47190845,
+      "lng": -80.54332011
+    },
+    {
+      "lat": 43.46835136,
+      "lng": -80.543314
+    },
+    {
+      "lat": 43.47040637,
+      "lng": -80.54330791
+    },
+    {
+      "lat": 43.47081992,
+      "lng": -80.54329516
+    },
+    {
+      "lat": 43.47053122,
+      "lng": -80.54327682
+    },
+    {
+      "lat": 43.47061096,
+      "lng": -80.54322924
+    },
+    {
+      "lat": 43.47288632,
+      "lng": -80.54316094
+    },
+    {
+      "lat": 43.47200769,
+      "lng": -80.54313469
+    },
+    {
+      "lat": 43.47088157,
+      "lng": -80.54311309
+    },
+    {
+      "lat": 43.4680769,
+      "lng": -80.54302467
+    },
+    {
+      "lat": 43.47211022,
+      "lng": -80.54302319
+    },
+    {
+      "lat": 43.47081154,
+      "lng": -80.54301447
+    },
+    {
+      "lat": 43.4707182,
+      "lng": -80.54294225
+    },
+    {
+      "lat": 43.46859171,
+      "lng": -80.54288359
+    },
+    {
+      "lat": 43.4705507,
+      "lng": -80.54288036
+    },
+    {
+      "lat": 43.46893502,
+      "lng": -80.54273439
+    },
+    {
+      "lat": 43.46719171,
+      "lng": -80.54254825
+    },
+    {
+      "lat": 43.47256864,
+      "lng": -80.5425246
+    },
+    {
+      "lat": 43.46980065,
+      "lng": -80.54251032
+    },
+    {
+      "lat": 43.46974265,
+      "lng": -80.54249258
+    },
+    {
+      "lat": 43.46962339,
+      "lng": -80.54242597
+    },
+    {
+      "lat": 43.46958167,
+      "lng": -80.54238721
+    },
+    {
+      "lat": 43.47260201,
+      "lng": -80.54238061
+    },
+    {
+      "lat": 43.46758974,
+      "lng": -80.5423804
+    },
+    {
+      "lat": 43.47304906,
+      "lng": -80.54237466
+    },
+    {
+      "lat": 43.46963405,
+      "lng": -80.54236363
+    },
+    {
+      "lat": 43.47289807,
+      "lng": -80.54235686
+    },
+    {
+      "lat": 43.47283404,
+      "lng": -80.54234723
+    },
+    {
+      "lat": 43.47262339,
+      "lng": -80.54234317
+    },
+    {
+      "lat": 43.47254035,
+      "lng": -80.54232772
+    },
+    {
+      "lat": 43.47264053,
+      "lng": -80.54232771
+    },
+    {
+      "lat": 43.47260259,
+      "lng": -80.5423153
+    },
+    {
+      "lat": 43.47286471,
+      "lng": -80.54227435
+    },
+    {
+      "lat": 43.47282816,
+      "lng": -80.54226414
+    },
+    {
+      "lat": 43.47166684,
+      "lng": -80.54223421
+    },
+    {
+      "lat": 43.4725657,
+      "lng": -80.54220874
+    },
+    {
+      "lat": 43.46976834,
+      "lng": -80.54219667
+    },
+    {
+      "lat": 43.47217952,
+      "lng": -80.54219644
+    },
+    {
+      "lat": 43.47233241,
+      "lng": -80.54219359
+    },
+    {
+      "lat": 43.47283744,
+      "lng": -80.54218996
+    },
+    {
+      "lat": 43.46973109,
+      "lng": -80.54217366
+    },
+    {
+      "lat": 43.47223621,
+      "lng": -80.54214172
+    },
+    {
+      "lat": 43.4728638,
+      "lng": -80.54214139
+    },
+    {
+      "lat": 43.47225582,
+      "lng": -80.54213739
+    },
+    {
+      "lat": 43.47251383,
+      "lng": -80.54213671
+    },
+    {
+      "lat": 43.47170147,
+      "lng": -80.54212725
+    },
+    {
+      "lat": 43.46924663,
+      "lng": -80.54210602
+    },
+    {
+      "lat": 43.46976356,
+      "lng": -80.54210264
+    },
+    {
+      "lat": 43.47148417,
+      "lng": -80.54209514
+    },
+    {
+      "lat": 43.46982153,
+      "lng": -80.5420883
+    },
+    {
+      "lat": 43.4714265,
+      "lng": -80.5420834
+    },
+    {
+      "lat": 43.46952814,
+      "lng": -80.54207666
+    },
+    {
+      "lat": 43.47232319,
+      "lng": -80.54207475
+    },
+    {
+      "lat": 43.4673652,
+      "lng": -80.54205598
+    },
+    {
+      "lat": 43.47246533,
+      "lng": -80.54205289
+    },
+    {
+      "lat": 43.46992704,
+      "lng": -80.54205098
+    },
+    {
+      "lat": 43.47264601,
+      "lng": -80.54203562
+    },
+    {
+      "lat": 43.47237866,
+      "lng": -80.54201568
+    },
+    {
+      "lat": 43.47264934,
+      "lng": -80.54199118
+    },
+    {
+      "lat": 43.47157615,
+      "lng": -80.54198247
+    },
+    {
+      "lat": 43.4722363,
+      "lng": -80.54191734
+    },
+    {
+      "lat": 43.47249802,
+      "lng": -80.54187819
+    },
+    {
+      "lat": 43.47255732,
+      "lng": -80.54185572
+    },
+    {
+      "lat": 43.46817641,
+      "lng": -80.54185511
+    },
+    {
+      "lat": 43.47262882,
+      "lng": -80.54185447
+    },
+    {
+      "lat": 43.46889618,
+      "lng": -80.54184326
+    },
+    {
+      "lat": 43.46952179,
+      "lng": -80.5418346
+    },
+    {
+      "lat": 43.46820019,
+      "lng": -80.5417922
+    },
+    {
+      "lat": 43.47242498,
+      "lng": -80.54177272
+    },
+    {
+      "lat": 43.4688301,
+      "lng": -80.54171228
+    },
+    {
+      "lat": 43.47239379,
+      "lng": -80.54170081
+    },
+    {
+      "lat": 43.46896108,
+      "lng": -80.54169236
+    },
+    {
+      "lat": 43.4701395,
+      "lng": -80.54167692
+    },
+    {
+      "lat": 43.47057453,
+      "lng": -80.54165856
+    },
+    {
+      "lat": 43.47160883,
+      "lng": -80.54164201
+    },
+    {
+      "lat": 43.47061977,
+      "lng": -80.54157981
+    },
+    {
+      "lat": 43.46831903,
+      "lng": -80.54157823
+    },
+    {
+      "lat": 43.47087604,
+      "lng": -80.54155293
+    },
+    {
+      "lat": 43.47086071,
+      "lng": -80.54154589
+    },
+    {
+      "lat": 43.46824286,
+      "lng": -80.54152663
+    },
+    {
+      "lat": 43.47060324,
+      "lng": -80.54147812
+    },
+    {
+      "lat": 43.46920698,
+      "lng": -80.54140986
+    },
+    {
+      "lat": 43.46784687,
+      "lng": -80.54138486
+    },
+    {
+      "lat": 43.47069314,
+      "lng": -80.54134037
+    },
+    {
+      "lat": 43.47261575,
+      "lng": -80.54132691
+    },
+    {
+      "lat": 43.47071855,
+      "lng": -80.54131354
+    },
+    {
+      "lat": 43.46788107,
+      "lng": -80.54130072
+    },
+    {
+      "lat": 43.47028742,
+      "lng": -80.54099739
+    },
+    {
+      "lat": 43.47170352,
+      "lng": -80.54093863
+    },
+    {
+      "lat": 43.47037268,
+      "lng": -80.54090418
+    },
+    {
+      "lat": 43.4716091,
+      "lng": -80.54085562
+    },
+    {
+      "lat": 43.47035055,
+      "lng": -80.54082578
+    },
+    {
+      "lat": 43.47046926,
+      "lng": -80.54079687
+    },
+    {
+      "lat": 43.47027604,
+      "lng": -80.54074864
+    },
+    {
+      "lat": 43.47043849,
+      "lng": -80.54063887
+    },
+    {
+      "lat": 43.47033093,
+      "lng": -80.54062016
+    },
+    {
+      "lat": 43.47027,
+      "lng": -80.54055594
+    },
+    {
+      "lat": 43.47112635,
+      "lng": -80.54044535
+    },
+    {
+      "lat": 43.46906133,
+      "lng": -80.54035218
+    },
+    {
+      "lat": 43.47318076,
+      "lng": -80.5403488
+    },
+    {
+      "lat": 43.46904749,
+      "lng": -80.54027397
+    },
+    {
+      "lat": 43.47320631,
+      "lng": -80.54024318
+    },
+    {
+      "lat": 43.4692841,
+      "lng": -80.54023379
+    },
+    {
+      "lat": 43.47081317,
+      "lng": -80.54022033
+    },
+    {
+      "lat": 43.47292014,
+      "lng": -80.54019389
+    },
+    {
+      "lat": 43.47090071,
+      "lng": -80.54018057
+    },
+    {
+      "lat": 43.47073485,
+      "lng": -80.54016975
+    },
+    {
+      "lat": 43.47095534,
+      "lng": -80.54015799
+    },
+    {
+      "lat": 43.47309885,
+      "lng": -80.54013257
+    },
+    {
+      "lat": 43.47290631,
+      "lng": -80.54011497
+    },
+    {
+      "lat": 43.47321268,
+      "lng": -80.54011112
+    },
+    {
+      "lat": 43.4731118,
+      "lng": -80.54010226
+    },
+    {
+      "lat": 43.47093281,
+      "lng": -80.54010044
+    },
+    {
+      "lat": 43.46997055,
+      "lng": -80.54009486
+    },
+    {
+      "lat": 43.47292224,
+      "lng": -80.54007544
+    },
+    {
+      "lat": 43.47121895,
+      "lng": -80.54006812
+    },
+    {
+      "lat": 43.4700671,
+      "lng": -80.54001541
+    },
+    {
+      "lat": 43.47268447,
+      "lng": -80.54000884
+    },
+    {
+      "lat": 43.46920716,
+      "lng": -80.54000664
+    },
+    {
+      "lat": 43.4728689,
+      "lng": -80.53997624
+    },
+    {
+      "lat": 43.47300177,
+      "lng": -80.5399692
+    },
+    {
+      "lat": 43.47284349,
+      "lng": -80.53996151
+    },
+    {
+      "lat": 43.47278781,
+      "lng": -80.53995853
+    },
+    {
+      "lat": 43.47283748,
+      "lng": -80.53995213
+    },
+    {
+      "lat": 43.47010926,
+      "lng": -80.53994821
+    },
+    {
+      "lat": 43.46903766,
+      "lng": -80.53989146
+    },
+    {
+      "lat": 43.4700586,
+      "lng": -80.53985728
+    },
+    {
+      "lat": 43.47267026,
+      "lng": -80.53984518
+    },
+    {
+      "lat": 43.47322082,
+      "lng": -80.53980457
+    },
+    {
+      "lat": 43.47067943,
+      "lng": -80.53978367
+    },
+    {
+      "lat": 43.47318845,
+      "lng": -80.53977965
+    },
+    {
+      "lat": 43.47309124,
+      "lng": -80.53977382
+    },
+    {
+      "lat": 43.47298778,
+      "lng": -80.53977086
+    },
+    {
+      "lat": 43.4732012,
+      "lng": -80.53976434
+    },
+    {
+      "lat": 43.47052992,
+      "lng": -80.5397045
+    },
+    {
+      "lat": 43.47017309,
+      "lng": -80.5396784
+    },
+    {
+      "lat": 43.47301681,
+      "lng": -80.53966987
+    },
+    {
+      "lat": 43.47203608,
+      "lng": -80.53965168
+    },
+    {
+      "lat": 43.47297226,
+      "lng": -80.53964612
+    },
+    {
+      "lat": 43.47290438,
+      "lng": -80.53963011
+    },
+    {
+      "lat": 43.47085342,
+      "lng": -80.53961715
+    },
+    {
+      "lat": 43.47308366,
+      "lng": -80.5395883
+    },
+    {
+      "lat": 43.47317054,
+      "lng": -80.53957422
+    },
+    {
+      "lat": 43.47030429,
+      "lng": -80.53956297
+    },
+    {
+      "lat": 43.47091921,
+      "lng": -80.53954659
+    },
+    {
+      "lat": 43.47266533,
+      "lng": -80.53954437
+    },
+    {
+      "lat": 43.47114244,
+      "lng": -80.53947659
+    },
+    {
+      "lat": 43.46995824,
+      "lng": -80.539429
+    },
+    {
+      "lat": 43.47073745,
+      "lng": -80.53940188
+    },
+    {
+      "lat": 43.4703195,
+      "lng": -80.5391944
+    },
+    {
+      "lat": 43.47106594,
+      "lng": -80.53912519
+    },
+    {
+      "lat": 43.47078406,
+      "lng": -80.53908834
+    },
+    {
+      "lat": 43.47116383,
+      "lng": -80.5389193
+    },
+    {
+      "lat": 43.47384156,
+      "lng": -80.53891678
+    },
+    {
+      "lat": 43.47340865,
+      "lng": -80.53888967
+    },
+    {
+      "lat": 43.47319476,
+      "lng": -80.53879133
+    },
+    {
+      "lat": 43.47387553,
+      "lng": -80.53877294
+    },
+    {
+      "lat": 43.4722664,
+      "lng": -80.53864579
+    },
+    {
+      "lat": 43.47112696,
+      "lng": -80.53855477
+    },
+    {
+      "lat": 43.46267674,
+      "lng": -80.53843039
+    },
+    {
+      "lat": 43.47534497,
+      "lng": -80.53811394
+    },
+    {
+      "lat": 43.47141061,
+      "lng": -80.53656499
+    },
+    {
+      "lat": 43.47117882,
+      "lng": -80.53648561
+    },
+    {
+      "lat": 43.47081146,
+      "lng": -80.53648318
+    },
+    {
+      "lat": 43.47081248,
+      "lng": -80.53635281
+    },
+    {
+      "lat": 43.47041896,
+      "lng": -80.53609753
+    },
+    {
+      "lat": 43.47029357,
+      "lng": -80.53608363
+    },
+    {
+      "lat": 43.47046469,
+      "lng": -80.53601773
+    },
+    {
+      "lat": 43.47143796,
+      "lng": -80.53596945
+    },
+    {
+      "lat": 43.47025754,
+      "lng": -80.53594288
+    },
+    {
+      "lat": 43.47022552,
+      "lng": -80.53593251
+    },
+    {
+      "lat": 43.47027304,
+      "lng": -80.53578224
+    },
+    {
+      "lat": 43.47062636,
+      "lng": -80.5355984
+    },
+    {
+      "lat": 43.4705974,
+      "lng": -80.53553817
+    },
+    {
+      "lat": 43.47058499,
+      "lng": -80.53546279
+    },
+    {
+      "lat": 43.47125658,
+      "lng": -80.53530477
+    },
+    {
+      "lat": 43.47063534,
+      "lng": -80.53519796
+    },
+    {
+      "lat": 43.47035841,
+      "lng": -80.53515398
+    },
+    {
+      "lat": 43.47008239,
+      "lng": -80.5347875
+    },
+    {
+      "lat": 43.47075853,
+      "lng": -80.53453871
+    },
+    {
+      "lat": 43.47063005,
+      "lng": -80.53398335
+    },
+    {
+      "lat": 43.47086705,
+      "lng": -80.53373203
+    },
+    {
+      "lat": 43.47046364,
+      "lng": -80.53339512
+    },
+    {
+      "lat": 43.46875757,
+      "lng": -80.53274147
+    },
+    {
+      "lat": 43.46713329,
+      "lng": -80.52813058
+    }
+  ]
+}

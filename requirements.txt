@@ -10,3 +10,4 @@ six==1.15.0
 toml==0.10.1
 typed-ast==1.4.1
 wrapt==1.12.1
+Flask==1.1.1
