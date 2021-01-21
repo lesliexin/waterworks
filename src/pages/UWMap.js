@@ -50,10 +50,12 @@ export function UWMap() {
     setStoryInfo(undefined);
   };
 
+  const isConnected = true;
+
   return (
     <React.Fragment>
-      <Container>
-      <ErrorModal/>
+    {isConnected
+    ?  <Container>
         <StyledMap
           center={currentLocation}
           zoom={zoom}
@@ -94,6 +96,9 @@ export function UWMap() {
           />
         )}
       </Container>
+
+    : <ErrorModal/>
+      }
     </React.Fragment>
   );
 }
