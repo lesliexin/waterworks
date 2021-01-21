@@ -32,7 +32,7 @@ const TextContainer = styled.div`
 `;
 
 const CloseContainer = styled(Close)`
-    cursor: pointer;
+    cursor: cell;
     width: 10vw;
     z-index: 5000;
     position: absolute;
@@ -47,7 +47,7 @@ const CloseContainer = styled(Close)`
 
     &:hover {
         color: #F2874F;
-      } 
+      }
 `;
 
 const Story = styled.p`

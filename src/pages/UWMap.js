@@ -7,7 +7,7 @@ import {
   ZoomControl,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { HeatPin, Modal, Pin } from "../components";
+import { ErrorModal, HeatPin, Modal, Pin } from "../components";
 
 const StyledMap = styled(MapContainer)`
   height: 100vh;
@@ -53,6 +53,7 @@ export function UWMap() {
   return (
     <React.Fragment>
       <Container>
+      <ErrorModal/>
         <StyledMap
           center={currentLocation}
           zoom={zoom}
