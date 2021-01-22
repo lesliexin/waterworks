@@ -1,9 +1,12 @@
 import React from 'react';
+import {BrowserView, MobileView} from 'react-device-detect';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home, UWMap, Mobile } from "./pages";
 
 function App() {
   return (
+    <>
+    <BrowserView>
     <Router>
       <Switch>
         <Route exact path="/">
@@ -12,11 +15,13 @@ function App() {
         <Route path="/map">
           <UWMap />
         </Route>
-        <Route path="/mobile">
-          <Mobile />
-        </Route>
       </Switch>
     </Router>
+    </BrowserView>
+    <MobileView>
+      <Mobile />
+    </MobileView>
+    </>
   );
 }
 
