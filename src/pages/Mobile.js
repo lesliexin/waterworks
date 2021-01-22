@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import "../assets/fonts.css";
 
@@ -24,7 +25,7 @@ const Title = styled.div`
   font-size: 30px;
   letter-spacing: 0px;
   color: #14161b;
-  text-shadow: 0.6px 0.6px 0px  #fff, -0.6px -0.6px 0px  #fff, 0.6px -0.6px 0px  #fff, -0.6px 0.6px 0px  #fff;
+  text-shadow: 1px 1px 0px  #fff, -1px -1px 0px  #fff, 1px -1px 0px  #fff, -1px 1px 0px  #fff;
 `;
 
 
@@ -33,7 +34,7 @@ const Body = styled.div`
   width: 80vw;
   left: 24px;
   top: 55vh;
-  padding-top: 12px;
+  padding-top: 8px;
   z-index: 1;
   font-family: 'Roboto Mono', monospace;
   font-size: 14px;
@@ -48,6 +49,7 @@ const Link = styled.div`
     font-weight: 600;
     font-style: oblique;
     text-decoration: underline;
+    letter-spacing: 0px;
     color: #F2874F;
     &:hover {
       border: 1px solid rgb(127, 0, 0, 0);
@@ -56,17 +58,20 @@ const Link = styled.div`
 `;
 
 export function Mobile() {
+      const history = useHistory();
   return (
     <Container>
-      <Title>
-        we're not great at responsive design.
-      </Title>
-      <Body>
-        Mind using a laptop or desktop?
-        <Link>
-           or, read more about this project
-        </Link>
-      </Body>
+    <Title>
+    we're not great at responsive design.
+    </Title>
+    <Body>
+    Mind using a laptop or desktop?
+    <a href="https://docs.google.com/document/d/1BLiDYif7sKWhhHMilXTnNVRLqB9e47-EDg3NPijdsVU/edit" target="_blank">
+    <Link>
+    or, read more about this project
+    </Link>
+    </a>
+    </Body>
     </Container>
   );
 };

@@ -16,10 +16,10 @@ code {
 
 @keyframes cry {
   0% {
-    transform: translateY(0);
+    transform: translate(0) rotate(0deg);
   }
   100% {
-    transform: translateY(920%);
+    transform: translate(-40%,800%) rotate(30deg);
     position: relative;
     opacity: 0;
     display: none;

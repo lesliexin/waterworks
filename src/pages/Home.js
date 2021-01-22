@@ -26,10 +26,10 @@ const LeftEye = styled.div`
   position: absolute;
   top: 0px;
   left: 300px;
-  z-index: 1;
+  z-index: 2;
   font-family: 'Roboto Mono', monospace;
   font-size: 18px;
-  letter-spacing: 2.8px;
+  letter-spacing: 3px;
   font-style: oblique;
 `;
 
@@ -37,7 +37,7 @@ const RightEye = styled.div`
   position: absolute;
   top: 90px;
   left: 700px;
-  z-index: 2;
+  z-index: 3;
   font-family: 'Roboto Mono', monospace;
   font-size: 18px;
   letter-spacing: 2px;
@@ -48,7 +48,7 @@ const Underline = styled.img`
   position: absolute;
   top: 8px;
   left: -14px;
-  z-index: 1;
+  z-index: 2;
 `;
 
 
@@ -56,7 +56,7 @@ const Mouth = styled.div`
   position: absolute;
   top: 220px;
   left: 0px;
-  z-index: 1;
+  z-index: 2;
   font-family: 'Roboto Mono', monospace;
   font-size: 18px;
   letter-spacing: 1px;
@@ -67,9 +67,9 @@ const Mouth = styled.div`
 const Tear = styled.div`
   position: absolute;
   top: 120px;
-  left: 500px;
-  width: 12vw;
-  z-index: 1;
+  left: 480px;
+  width: 150px;
+  z-index: 2;
   animation: 3s ease-out 1.8s 1 forwards cry;
   overflow: hidden;
 `;
@@ -79,7 +79,7 @@ const PrimaryCTA = styled.div`
     position: absolute;
     top: 476px;
     left: 950px;
-    z-index: 2;
+    z-index: 3;
     font-family: 'Roboto Mono', monospace;
     font-weight: 600;
     font-size: 18px;
@@ -91,7 +91,7 @@ const Arrow = styled.img`
   position: absolute;
   top: 10px;
   left: 6px;
-  z-index: 2;
+  z-index: 3;
 `;
 
 const E5 = styled.img`
@@ -101,7 +101,7 @@ const E5 = styled.img`
   height: 100vh;
   min-height: 500px;
   z-index: 0;
-  opacity: 60%;
+  opacity: 0.8;
 `;
 
 
@@ -136,7 +136,7 @@ export function Home() {
           </LeftEye>
 
           <RightEye>
-          <a href="https://docs.google.com/document/d/1BLiDYif7sKWhhHMilXTnNVRLqB9e47-EDg3NPijdsVU/edit" target="_blank">
+          <a href="https://docs.google.com/document/d/1BLiDYif7sKWhhHMilXTnNVRLqB9e47-EDg3NPijdsVU/edit" target="_blank" rel="noreferrer">
           <Link>
           <svg width='280px' height='180px'>
             <defs>
@@ -160,7 +160,7 @@ export function Home() {
             </defs>
           <text x='12' fill='#FFFFFF'>
             <textPath xlinkHref='#mouth' >
-            EMOTIONS CAN BE DIFFICULT TO NAVIGATE, SO LET'S START WITH SOME LANDMARKS ACROSS CAMPUS.
+            EMOTIONS ARE DIFFICULT TO NAVIGATE, BUT CAN CRYING TOGETHER ON CAMPUS HELP LEAD THE WAY?
             </textPath>
           </text>
           </svg>
@@ -172,7 +172,7 @@ export function Home() {
               <defs>
               <path id='enter' d='M0.924805 1C20.864 26.7386 60.897 54.5941 88.4837 61.4857C133.13 72.6391 170.769 69.0867 228.925 53.7641'/>
               </defs>
-            <text x='24' fill='#F2874F'>
+            <text x='24' fill='#FF8C50'>
               <textPath xlinkHref='#enter' >
               TAKE A TOUR
               </textPath>

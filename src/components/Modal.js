@@ -63,19 +63,19 @@ const Story = styled.p`
     font-family: 'Anonymous Pro', monospace;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 28px;
     color: #FFFFFF;
     margin-bottom: 8%;
     width: ${props => (props.width)};
 
     @media ${device.laptopL} {
         font-size: 18px;
-        line-height: 26px;
+        line-height: 28px;
     }
 
     @media ${device.tablet} {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 20px;
     }
 `;
@@ -84,8 +84,8 @@ const Location = styled.p`
     font-family: 'Anonymous Pro', monospace;
     font-style: italic;
     font-weight: bold;
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 22px;
     text-align: left;
     color: #F2874F;
     margin: 0;
@@ -93,7 +93,7 @@ const Location = styled.p`
 
     @media ${device.laptopL} {
         font-size: 18px;
-        line-height: 26px;
+        line-height: 22px;
     }
 
     @media ${device.tablet} {
