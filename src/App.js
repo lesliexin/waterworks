@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserView, MobileView} from 'react-device-detect';
+import { BrowserView, MobileView } from 'react-device-detect';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home, UWMap, Mobile } from "./pages";
 
