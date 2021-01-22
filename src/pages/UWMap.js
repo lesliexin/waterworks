@@ -12,6 +12,30 @@ import { ErrorModal, HeatPin, Modal, Pin } from "../components";
 const StyledMap = styled(MapContainer)`
   height: 100vh;
   width: 100vw;
+
+  .leaflet-control-zoom {
+    right: 2vw;
+    bottom: 30px;
+    margin: 0;
+  }
+
+  .leaflet-bar a {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid white;
+    color: none;
+    line-height: 45px;
+    font-family: 'presicav', sans-serif;
+    text-shadow: 0.6px 0.6px 0px  #fff, -0.6px -0.6px 0px  #fff, 0.6px -0.6px 0px  #fff, -0.6px 0.6px 0px  #fff;
+    border-radius: 0;
+    :first-child {
+      font-size: 70px;
+    }
+    :last-child {
+      font-size: 50px;
+    }
+  }
 `;
 
 const Container = styled.div`
@@ -23,6 +47,63 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`;
+
+const ButtonBottomLeft = styled.div`
+  position: absolute;
+  cursor: crosshair;
+  bottom: 2vh;
+  left: 2vw;
+  z-index: 5000;
+`;
+
+const ButtonTopLeft = styled.div`
+  position: absolute;
+  cursor: crosshair;
+  top: 2vh;
+  left: 2vw;
+  z-index: 5000;
+`;
+
+const ButtonText = styled.div`
+  width: 80vw;
+  font-family: 'presicav', sans-serif;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.06em;
+  color: #14161b;
+  text-shadow: 0.6px 0.6px 0px  #fff, -0.6px -0.6px 0px  #fff, 0.6px -0.6px 0px  #fff, -0.6px 0.6px 0px  #fff;
+  z-index: 5000;
+
+  &:hover {
+    cursor: pointer;
+    text-shadow: 0;
+  }
+`;
+
+const RecenterButton = styled.button`
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  font-size: 26px;
+  font-weight: 500;
+  border: none;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  border-radius: 0;
+  border: 1px solid white;
+  z-index: 5000;
+  bottom: 150px;
+  right: 2vw;
+`;
+
+const Circle = styled.div`
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid white;
+  margin-left: 11px;
 `;
 
 export function UWMap() {
@@ -70,6 +151,9 @@ export function UWMap() {
           />
           <ZoomControl position="bottomright" />
           <AttributionControl position="bottomleft" />
+          <ButtonTopLeft><ButtonText>info</ButtonText></ButtonTopLeft>
+          <ButtonBottomLeft><ButtonText>add your story</ButtonText></ButtonBottomLeft>
+          <RecenterButton><Circle/></RecenterButton>
           {heatmapCoordinates.map((pin, key) => {
             return <HeatPin position={[pin.lat, pin.lng]} key={key}/>;
           })}
