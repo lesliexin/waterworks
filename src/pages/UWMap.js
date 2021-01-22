@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import {
   AttributionControl,
@@ -63,16 +62,17 @@ const ButtonBottomLeft = styled.div`
 
 `;
 
-const ButtonTopLeft = styled.div`
+const ButtonTopLeft = styled.a`
+  display: block;
   position: absolute;
   cursor: crosshair;
   top: 2vh;
   left: 2vw;
   z-index: 5000;
+  text-decoration: none;
 `;
 
 const ButtonText = styled.div`
-  width: 80vw;
   font-family: 'presicav', sans-serif;
   font-size: 48px;
   line-height: 58px;
@@ -84,6 +84,7 @@ const ButtonText = styled.div`
   &:hover {
     cursor: cell;
     text-shadow: 0;
+    color: white;
   }
 `;
 
@@ -138,9 +139,7 @@ export function UWMap() {
     setStoryInfo(undefined);
   };
 
-  const history = useHistory();
   const isConnected = true;
-
 
   return (
     <React.Fragment>
@@ -159,7 +158,7 @@ export function UWMap() {
           />
           <ZoomControl position="bottomright" />
           <AttributionControl position="bottomleft" />
-          <ButtonTopLeft onClick={() => {history.push("/")}}><ButtonText>info</ButtonText></ButtonTopLeft>
+          <ButtonTopLeft href="https://docs.google.com/document/d/1BLiDYif7sKWhhHMilXTnNVRLqB9e47-EDg3NPijdsVU/edit" target="_blank"><ButtonText>info</ButtonText></ButtonTopLeft>
           <ButtonBottomLeft> <a href="https://forms.gle/hbacdKVqpG9jk7Hw9" target="_blank"><ButtonText>add your story</ButtonText></a></ButtonBottomLeft>
           <RecenterButton><Circle/></RecenterButton>
           {heatmapCoordinates.map((pin, key) => {
