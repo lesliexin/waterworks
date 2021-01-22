@@ -48,7 +48,7 @@ const Underline = styled.img`
   position: absolute;
   top: 8px;
   left: -14px;
-  z-index: 2;
+  z-index: 1;
 `;
 
 
@@ -66,7 +66,7 @@ const Mouth = styled.div`
 
 const Tear = styled.div`
   position: absolute;
-  top: 100px;
+  top: 120px;
   left: 500px;
   width: 12vw;
   z-index: 1;
@@ -97,11 +97,11 @@ const Arrow = styled.img`
 const E5 = styled.img`
   position: absolute;
   right: 0;
-  top: 5vh;
-  height: 90vh;
+  top: 0;
+  height: 100vh;
   min-height: 500px;
   z-index: 0;
-  opacity: 50%;
+  opacity: 60%;
 `;
 
 
@@ -110,6 +110,10 @@ const Link = styled.div`
     &:hover {
       border: 1px solid rgb(127, 0, 0, 0);
       opacity: 80%;
+    }
+
+    .a{
+      cursor: cell;
     }
 `;
 
@@ -132,6 +136,7 @@ export function Home() {
           </LeftEye>
 
           <RightEye>
+          <a href="https://docs.google.com/document/d/1BLiDYif7sKWhhHMilXTnNVRLqB9e47-EDg3NPijdsVU/edit" target="_blank">
           <Link>
           <svg width='280px' height='180px'>
             <defs>
@@ -139,17 +144,14 @@ export function Home() {
             </defs>
           <text x='8' fill='#FFFFFF'>
             <textPath xlinkHref='#righteye' >
-            INFREQUENTLY ASKED QUESTIONS
+             WHAT IS THIS PROJECT ABOUT?
             </textPath>
           </text>
           </svg>
           <Underline src={underline} alt="Underline"/>
           </Link>
+          </a>
           </RightEye>
-
-          <Tear>
-            <img src={tear} alt="Tear" />
-          </Tear>
 
           <Mouth>
           <svg width='1000px' height='300px'>
@@ -181,6 +183,9 @@ export function Home() {
           </PrimaryCTA>
           </Face>
 
+          <Tear>
+            <img src={tear} alt="Tear" />
+          </Tear>
           <E5 src={e5} alt="E5" />
         </Container>
     );

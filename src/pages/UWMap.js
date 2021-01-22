@@ -7,7 +7,7 @@ import {
   ZoomControl,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { HeatPin, Modal, Pin } from "../components";
+import { ErrorModal, HeatPin, Modal, Pin } from "../components";
 
 const StyledMap = styled(MapContainer)`
   height: 100vh;
@@ -18,6 +18,7 @@ const Container = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
+  cursor: crosshair;
 
   flex-direction: column;
   justify-content: center;
@@ -50,9 +51,12 @@ export function UWMap() {
     setStoryInfo(undefined);
   };
 
+  const isConnected = true;
+
   return (
     <React.Fragment>
-      <Container>
+    {isConnected
+    ?  <Container>
         <StyledMap
           center={currentLocation}
           zoom={zoom}
@@ -93,6 +97,9 @@ export function UWMap() {
           />
         )}
       </Container>
+
+    : <ErrorModal/>
+      }
     </React.Fragment>
   );
 }
