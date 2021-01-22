@@ -4,6 +4,15 @@ import { ReactComponent as Close} from "../assets/close.svg";
 import { device } from "../styles";
 import "../assets/fonts.css";
 
+const Background = styled.div`
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 999;
+  background-color: #000000;
+  opacity: 0.5;
+`;
+
 const Container = styled.div`
   height: 60vw;
   width: 80vw;
@@ -108,6 +117,7 @@ const StyledIllustration = styled.img`
 export function Modal({ storyInfo, handleClick }) {
 
     return (
+      <><Background onClick={handleClick}/>
         <Container>
             <CloseContainer onClick={handleClick}/>
            <TextContainer align={storyInfo.align}>
@@ -116,5 +126,6 @@ export function Modal({ storyInfo, handleClick }) {
            </TextContainer>
            {storyInfo.id && <StyledIllustration src={`/illustrations/${storyInfo.id}.svg`}/>}
         </Container>
+      </>
     );
 };
