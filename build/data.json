@@ -2,7 +2,19 @@
   "featuredStories": [
     {
       "id": 1,
-      "story": "During my first final exams in 1A. I was really stressed, overwhelmed and lonely. Around that time was the lowest point thus far in my uni career. Seeing people I knew was not helpful. Being really alone and everyone grinding during this time was not helpful. I didn’t really come out of this depression until the next summer (this happened in winter so it may have been seasonal too) after I went to therapy. The therapy was funded by my scholarship program.",
+      "story": [
+        "During my first final exams in 1A. I was really stressed, overwhelmed and lonely. Around that time was the lowest point thus far in my uni career. Seeing people I knew was not helpful. Being really alone and everyone grinding during this time was not helpful. I didn’t really come out of this depression until the next summer (this happened in winter so ",
+        {
+          "text": "it may have been seasonal too",
+          "link": "https://www.camh.ca/en/health-info/mental-illness-and-addiction-index/seasonal-affective-disorder"
+        },
+        ") after I went to therapy. ",
+        {
+          "text": "The therapy",
+          "link": "https://wusa.ca/services/empower-me"
+        },
+        " was funded by my scholarship program."
+      ],
       "location": "Dana Porter Library",
       "width": "90%",
       "lat": 43.4697210504004,
@@ -10,8 +22,13 @@
     },
     {
       "id": 2,
-      "story": "It was the day that prof. Igor Ivkovic died. Being on a Zoom call where people shared stories helpful in remembering him for the great man he was, and it ended up being good for me, but man did it hurt.",
-      "location": "Wilmot Court South floor 3",
+      "story": ["It was the day that prof. Igor Ivkovic died. Being on a Zoom call where people shared stories helpful in remembering him for the great man he was, and it ended up being good for me, ",
+        {
+          "text": "but man did it hurt.",
+          "link": "https://grievingtogether.ca/what-now/support/canada-info/"
+        }
+      ],
+        "location": "Wilmot Court South floor 3",
       "width": "100%",
       "align": "flex-start",
       "lat": 43.47081263,
@@ -19,15 +36,47 @@
     },
     {
       "id": 3,
-      "story": "I was in 2A and still recovering from a severe episode of depression and anxiety a few months prior. I was in the process of adjusting to antidepressants and would occasionally burst into tears arbitrarily. I am happy to say though that once I fully adjusted to my meds, they have made a world of positive difference for me.",
-      "location": "QNC First Floor Bathroom",
+      "story": ["I was in 2A and still",
+        {
+          "text": "recovering from a severe episode of depression",
+          "link": "https://www.webmd.com/depression/guide/depression-treatment-options#1"
+        },
+        " and anxiety a few months prior. I was in the process of adjusting to antidepressants and would occasionally burst into tears arbitrarily. I am happy to say though that once I fully adjusted to my meds, they have made a world of positive difference for me."
+      ],
+        "location": "QNC First Floor Bathroom",
       "width": "70%",
       "lat": 43.471008614,
       "lng": -80.54344091
     },
     {
       "id": 4,
-      "story": "I have Generalized Anxiety Disorder and Depression. I was really home-sick and dealing with being continually harassed by another student. I ultimately had a mental breakdown and almost dropped out of university since I felt incredibly ill and unsafe. I spent a lot of time seeing counselling and health services. What ultimately helped was professional support, my loved ones, and starting antidepressants. As for how I felt physically, I felt nauseous constantly and could barely eat for weeks. I had headaches and felt too ill to go to class for roughly 2 weeks. I often woke up to panic attacks and trying to rest only heightened my anxiety. My chest hurt and I couldn't sit still.",
+      "story": [
+        "I have ",
+        {
+          "text": "Generalized Anxiety Disorder",
+          "link": "https://adaa.org/understanding-anxiety/generalized-anxiety-disorder-gad"
+        },
+        " and Depression. I was really home-sick and dealing with being continually ",
+        {
+          "text": "harassed",
+          "link": "https://uwaterloo.ca/human-rights-equity-inclusion/cmahro/how-can-you-support/documenting-complaint-harassment"
+        },
+        " by another student. I ultimately had a mental breakdown and almost dropped out of university since I felt incredibly ill and unsafe. I spent a lot of time seeing ",
+        {
+          "text": "counselling and health services",
+          "link": "https://uwaterloo.ca/campus-wellness/health-services/student-medical-clinic"
+        },
+        ". What ultimately helped was professional ",
+        {
+          "text": "support",
+          "link": "https://wusa.ca/services/uw-mates"
+        },
+        ", my loved ones, and ",
+        {
+          "text": "starting antidepressants.",
+          "link": "https://www.healthline.com/health/depression/medication-list"
+        }
+      ],
       "location": "Village 1 West 5 Tower 3rd Floor",
       "width": "100%",
       "lat": 43.47212743,
@@ -50,15 +99,32 @@
     },
     {
       "id": 7,
-      "story": "Met Chris Hadfield",
+      "story": [
+        {
+          "text": "Met Chris Hadfield",
+          "link": "https://www.youtube.com/watch?v=P36xhtpw0Lg&list=PLPfak9ofGSn9vOEkIz328i4xQQq7e0kjc&index=2&ab_channel=CanadianSpaceAgency"
+        }
+      ],
       "location": "IQC lecture hall",
       "lat": 43.47118957,
       "lng": -80.54456515
     },
     {
       "id": 8,
-      "story": "Our prof had just gone over midterm material for one of my classes in first year and I had a panic attack because there was so much to know and I didn't know how I would ever learn it (which to be fair, there was so much material that we were only expected to know 30% of it), my friends came and sat with me, talked calmly, gave me a hug. We're like six weeks into first year so they were all brand new friends and I hadn't told them about my panic attacks and they all sat there and supported me and I really appreciated that.",
-      "location": "Basement of MC",
+      "story": [
+        "Our prof had just gone over midterm material for one of my classes in first year and I had a panic attack because there was so much to know and I didn't know how I would ever learn it (which to be fair, there was so much material that we were only expected to know 30% of it), my friends came and sat with me, ",
+        {
+          "text": "talked calmly",
+          "link": "https://wusa.ca/services/uw-mates"
+        },
+        ", gave me a hug. We're like six weeks into first year so they were all brand new friends and I hadn't told them about my panic attacks and ",
+        {
+          "text": "they all sat there and supported me",
+          "link": "https://www.healthline.com/health/how-to-help-someone-having-a-panic-attack"
+        },
+        " and I really appreciated that."
+      ],
+        "location": "Basement of MC",
       "width": "100%",
       "align": "flex-start",
       "lat": 43.47220585,
@@ -66,36 +132,77 @@
     },
     {
       "id": 9,
-      "story": "Got a panic attack in DC library about a midterm, felt embarrassed to be crying in front of other people so left and cried between EIT and E3 facing the wall so people couldn't see my face. Then went for a walk in Waterloo park to calm down, listened to my favourite podcast, got a treat at Williams and felt better.",
+      "story": [
+        {
+          "text": "Got a panic attack",
+          "link": "https://www.anxietycanada.com/articles/5-tips-for-dealing-with-panic-attacks-the-brave-way/"
+        },
+        " in DC library about a midterm, felt embarrassed to be crying in front of other people so left and cried between EIT and E3 facing the wall so people couldn't see my face. Then went for a walk in Waterloo park to calm down, ",
+        {
+          "text": "listened to my favourite podcast",
+          "link": "https://open.spotify.com/playlist/37i9dQZF1DX1s9knjP51Oa"
+        },
+        ", got a treat at Williams and felt better."
+      ],
       "location": "DC library",
       "lat": 43.47233019,
       "lng": -80.54208782
     },
     {
       "id": 10,
-      "story": "Menstruation",
+      "story": [
+        {
+          "text": "Menstruation",
+          "link": "https://www.healthline.com/health/womens-health/crying-during-period"
+        }
+      ],
       "location": "QNC Floor 2 Bathroom",
       "lat": 43.47149453,
       "lng": -80.54400625
     },
     {
       "id": 11,
-      "story": "It was a Bomber Wednesday during the spring term. I had just finished a fight with my partner at the time. We were both really drunk, mean things were said and I got super emotional and cried. The bouncer had to console me and someone gave me a cigarette.",
-      "location": "Bomber patio",
+      "story": [
+        "It was a Bomber Wednesday during the spring term. I had just finished ",
+        {
+          "text": "a fight",
+          "link": "https://www.verywellmind.com/managing-conflict-in-relationships-communication-tips-3144967"
+        },
+        " with my partner at the time. We were both really drunk, mean things were said and I got super emotional and cried. The bouncer had to console me and someone gave me a cigarette."
+      ],
+        "location": "Bomber patio",
       "lat": 43.47146938,
       "lng": -80.54491154
     },
     {
       "id": 12,
-      "story": "I got the first job offer of my entire life walking to class in Hagey Hall. I broke down in the hall out of excitement and joy, and two women rushed to comfort me. I told them that I was happy, and that I got an offer, and they both told me how happy they were for me and that I made their day!",
+      "story": [
+        "I got the first job offer of my entire life walking to class in Hagey Hall. I broke down in the hall out of excitement and joy, and two women rushed to comfort me. I told them that I was happy, and that I got an offer, and they both told me how happy they were for me and that ",
+        {
+          "text": "I made their day!",
+          "link": "https://www.psychologytoday.com/ca/blog/feeling-it/201307/the-science-behind-the-joy-sharing-joy"
+        }
+      ],
       "location": "PAS halls",
       "lat": 43.46725915,
       "lng": -80.54260818
     },
     {
       "id": 13,
-      "story": "Calculus and chemistry when I have mild number dyslexia, I think that says enough. Lots of sadness and doubt in myself, and I didn't think I deserved to go here.",
-      "location": "RCH bottom floor washroom",
+      "story": [
+        "Calculus and chemistry when I have mild ",
+        {
+          "text": "number dyslexia",
+          "link": "https://www.readandspell.com/dyscalculia-in-adults"
+        },
+        ", I think that says enough. Lots of sadness and ",
+        {
+          "text": "doubt in myself",
+          "link": "https://time.com/5312483/how-to-deal-with-impostor-syndrome/"
+        },
+        ", and I didn't think I deserved to go here."
+      ],
+        "location": "RCH bottom floor washroom",
       "lat": 43.47034793,
       "lng": -80.54064783
     },
@@ -108,7 +215,18 @@
     },
     {
       "id": 15,
-      "story": "I cried my eyes out here after hardships with first semester & family life. I also had a good cry at the sci link, on a bench near B1. I had just found out my OSAP would be basically nothing due to my stepdad accessing his pension early to save the family home from power of sale and thought I would have to drop out due to finances. Each time I felt like the world was ending and I was a failure. That I had no future, there was angry, sadness, bitterness, jealousy. The entire range of emotions.",
+      "story": [
+        "I cried my eyes out here after hardships with first semester & family life. I also had a good cry at the sci link, on a bench near B1. I had just found out my OSAP would be basically nothing due to my stepdad accessing his pension early to save the family home from power of sale and thought I would have to drop out due to ",
+        {
+          "text": "finances",
+          "link": "https://settlement.org/ontario/education/colleges-universities-and-institutes/financial-assistance-for-post-secondary-education/what-kinds-of-financial-help-can-i-get-for-my-education/"
+        },
+        ". Each time I felt like the world was ending and I was a failure. That I had no future, there was angry, sadness, bitterness, jealousy. ",
+        {
+          "text": "The entire range of emotions.",
+          "link": "https://wusa.ca/services/empower-me"
+        }
+      ],
       "location": "Walkway between the west side of PAC and the SLC doors with some beautiful old trees.",
       "width": "100%",
       "lat": 43.47192504,
@@ -123,7 +241,13 @@
     },
     {
       "id": 17,
-      "story": "I had a panic attack while writing a final exam in PAC. A very nice proctor sat with me on the stairs outside the gym while I was uncontrollably crying.",
+      "story": [
+        {
+          "text": "I had a panic attack",
+          "link": "https://www.anxietycanada.com/articles/5-tips-for-dealing-with-panic-attacks-the-brave-way/"
+        },
+        " while writing a final exam in PAC. A very nice proctor sat with me on the stairs outside the gym while I was uncontrollably crying."
+      ],
       "location": "PAC stairs",
       "lat": 43.4725476,
       "lng": -80.5462543
