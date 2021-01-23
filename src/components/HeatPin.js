@@ -1,7 +1,7 @@
 import React from 'react';
 import L from "leaflet";
 import heatPin from "../assets/heatpin.svg";
-import { Marker} from "react-leaflet";
+import {Marker} from "react-leaflet";
 
 export function HeatPin(props) {
     const icon = new L.Icon({
@@ -17,6 +17,7 @@ export function HeatPin(props) {
     <Marker
       position={props.position}
       icon={icon}
+      interactive={false}
     />
   );
 };

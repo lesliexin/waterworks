@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import {
   AttributionControl,
@@ -8,15 +9,35 @@ import {
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { ErrorModal, HeatPin, Modal, Pin } from "../components";
+import pinLegend from "../assets/legendpin.svg";
+import heatLegend from "../assets/legendheat.svg";
+import back from "../assets/back.svg";
 
 const StyledMap = styled(MapContainer)`
   height: 100vh;
   width: 100vw;
+  cursor: crosshair !important;
+
+  .leaflet-interactive {
+    cursor: cell;
+  }
+
+  .leaflet-disabled {
+    color: #14161b !important;
+    opacity: 0.8;
+  }
 
   .leaflet-control-zoom {
     right: 2vw;
     bottom: 30px;
     margin: 0;
+    cursor: cell;
+  }
+
+  .leaflet-control-attribution a {
+    font-size: 12px;
+    color: #14161b;
+    cursor: cell;
   }
 
   .leaflet-bar a {
@@ -27,8 +48,10 @@ const StyledMap = styled(MapContainer)`
     color: none;
     line-height: 45px;
     font-family: 'presicav', sans-serif;
-    text-shadow: 0.6px 0.6px 0px  #fff, -0.6px -0.6px 0px  #fff, 0.6px -0.6px 0px  #fff, -0.6px 0.6px 0px  #fff;
+    text-shadow: 0.8px 0.8px 0px  #fff, -0.8px -0.8px 0px  #fff, 0.8px -0.8px 0px  #fff, -0.8px 0.8px 0px  #fff;
     border-radius: 0;
+    cursor: cell;
+
     :first-child {
       font-size: 70px;
     }
@@ -52,9 +75,9 @@ const Container = styled.div`
 const ButtonBottomLeft = styled.div`
   position: absolute;
   cursor: crosshair;
-  bottom: 2vh;
+  bottom: 3vh;
   left: 2vw;
-  z-index: 5000;
+  z-index: 900;
 
   a:link{
     text-decoration: none;
@@ -68,23 +91,24 @@ const ButtonTopLeft = styled.a`
   cursor: crosshair;
   top: 2vh;
   left: 2vw;
-  z-index: 5000;
+  z-index: 900;
   text-decoration: none;
 `;
 
 const ButtonText = styled.div`
   font-family: 'presicav', sans-serif;
-  font-size: 48px;
-  line-height: 58px;
+  font-size: 42px;
+  line-height: 52px;
   letter-spacing: 0.06em;
   color: #14161b;
   text-shadow: 0.8px 0.8px 0px  #fff, -0.8px -0.8px 0px  #fff, 0.8px -0.8px 0px  #fff, -0.8px 0.8px 0px  #fff;
-  z-index: 5000;
+  z-index: 900;
 
   &:hover {
     cursor: cell;
     text-shadow: 0;
     color: white;
+    text-shadow: none;
   }
 `;
 
@@ -99,27 +123,56 @@ const RecenterButton = styled.button`
   background-color: rgba(0,0,0,0);
   border-radius: 0;
   border: 1px solid white;
-  z-index: 5000;
+  z-index: 900;
   bottom: 150px;
   right: 2vw;
+  cursor: cell;
 `;
 
-const Circle = styled.div`
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: none;
+const Legend = styled.div`
+  position: absolute;
+
+  width: auto;
+  height: 112px;
+  bottom: 30px;
+  right: 100px;
+  padding: 16px;
+
+  font-family: 'Anonymous Pro', mono;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 32px;
+  color: white;
+  font-weight: 400;
+
+  background-color: rgba(0,0,0,0);
   border: 1px solid white;
-  margin-left: 11px;
+  z-index: 900;
 `;
+
+const LegendItem = styled.p`
+  display: flex;
+  align-items: left;
+
+  font-family: 'Anonymous Pro', mono;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: white;
+  font-weight: 600;
+  padding-right: 32px;
+`;
+
 
 export function UWMap() {
   const [heatmapCoordinates, setHeatmapCoordinates] = useState([]);
   const [featuredPinData, setFeaturedPinData] = useState([]);
   const [storyInfo, setStoryInfo] = useState(undefined);
-  const zoom = 16.5;
-  const minZoom = 15.9;
+  const zoom = 16.25;
+  const minZoom = 14.5;
   const maxZoom = 18;
+  const zoomSnap = 0;
+  const zoomDelta = 0.5;
   const currentLocation = { lat: 43.471, lng: -80.543 };
 
   useEffect(() => {
@@ -139,6 +192,8 @@ export function UWMap() {
     setStoryInfo(undefined);
   };
 
+  const history = useHistory();
+
   const isConnected = true;
 
   return (
@@ -150,6 +205,8 @@ export function UWMap() {
           zoom={zoom}
           minZoom={minZoom}
           maxZoom={maxZoom}
+          zoomSnap={zoomSnap}
+          zoomDelta={zoomDelta}
           zoomControl={false}
           attributionControl={false}
         >
@@ -158,9 +215,13 @@ export function UWMap() {
           />
           <ZoomControl position="bottomright" />
           <AttributionControl position="bottomleft" />
-          <ButtonTopLeft href="https://docs.google.com/document/d/1BLiDYif7sKWhhHMilXTnNVRLqB9e47-EDg3NPijdsVU/edit" target="_blank"><ButtonText>info</ButtonText></ButtonTopLeft>
-          <ButtonBottomLeft> <a href="https://forms.gle/hbacdKVqpG9jk7Hw9" target="_blank"><ButtonText>add your story</ButtonText></a></ButtonBottomLeft>
-          <RecenterButton><Circle/></RecenterButton>
+          <ButtonTopLeft href="https://docs.google.com/document/d/1BLiDYif7sKWhhHMilXTnNVRLqB9e47-EDg3NPijdsVU/edit" target="_blank" rel="noreferrer"><ButtonText>about</ButtonText></ButtonTopLeft>
+          <ButtonBottomLeft> <a href="https://forms.gle/hbacdKVqpG9jk7Hw9" target="_blank" rel="noreferrer"><ButtonText>where have you cried?</ButtonText></a></ButtonBottomLeft>
+          <RecenterButton onClick={() => {history.push("/")}}><img src={back} alt="Back button" width="22px" height="22px" style={{paddingRight:'2px'}}/></RecenterButton>
+          <Legend><i>MAP LEGEND</i>
+            <LegendItem><img src={pinLegend} alt="Pin" width="22px" height="24px" style={{paddingRight:'12px'}}/> Featured story </LegendItem>
+            <LegendItem><img src={heatLegend} alt="heat spot" width="20px" height="22px" style={{paddingRight:'14px'}}/> Places we've cried </LegendItem>
+          </Legend>
           {heatmapCoordinates.map((pin, key) => {
             return <HeatPin position={[pin.lat, pin.lng]} key={key}/>;
           })}
