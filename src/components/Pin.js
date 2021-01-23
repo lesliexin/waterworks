@@ -1,7 +1,6 @@
 import React from 'react';
 import L from "leaflet";
 import pinMarker from "../assets/pin.svg";
-import scribble from "../assets/scribble.svg";
 import { Marker } from "react-leaflet";
 
 export function Pin({ position, storyInfo, handleClick}) {

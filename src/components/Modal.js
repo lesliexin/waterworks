@@ -8,7 +8,7 @@ const Background = styled.div`
   height: 100vh;
   width: 100vw;
   position: absolute;
-  z-index: 999;
+  z-index: 1000;
   background-color: #000000;
   opacity: 0.5;
 `;
@@ -34,7 +34,7 @@ const Container = styled.div`
 const TextContainer = styled.div`
   height: 80%;
   width: 80%;
-  z-index: 1000;
+  z-index: 1100;
   display: flex;
   flex-direction: column;
   justify-content: ${props => (props.align)};
@@ -43,7 +43,7 @@ const TextContainer = styled.div`
 const CloseContainer = styled(Close)`
     cursor: cell;
     width: 10vw;
-    z-index: 5000;
+    z-index: 1200;
     position: absolute;
     top: 41.3vw;
     right: -7vw;
@@ -56,10 +56,15 @@ const CloseContainer = styled(Close)`
 
     &:hover {
         color: #F2874F;
-      }
+    }
 `;
 
-const Story = styled.p`
+const StoryContainer = styled.div`
+    width: ${props => (props.width)};
+    margin-bottom: 8%;
+`;
+
+const Story = styled.span`
     font-family: 'Anonymous Pro', monospace;
     font-style: normal;
     font-weight: normal;
@@ -67,7 +72,35 @@ const Story = styled.p`
     line-height: 28px;
     color: #FFFFFF;
     margin-bottom: 8%;
-    width: ${props => (props.width)};
+    width: 100%;
+
+    @media ${device.laptopL} {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    @media ${device.tablet} {
+        font-size: 14px;
+        line-height: 20px;
+    }
+`;
+
+const StoryLink = styled.a`
+    font-family: 'Anonymous Pro', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 8%;
+    text-decoration: underline;
+    width: 100%;
+    position: relative;
+    z-index: 1500;
+
+    &:hover {
+      cursor: pointer;
+  }
 
     @media ${device.laptopL} {
         font-size: 18px;
@@ -106,7 +139,7 @@ const StyledIllustration = styled.img`
     height: 60vw;
     width: 80vw;
     position: absolute;
-    z-index: 1500;
+    z-index: 900;
 
     @media (orientation:landscape) {
         height: 70vh;
@@ -121,7 +154,16 @@ export function Modal({ storyInfo, handleClick }) {
         <Container>
             <CloseContainer onClick={handleClick}/>
            <TextContainer align={storyInfo.align}>
-               <Story width={storyInfo.width}>{storyInfo.story ?? ""}</Story>
+             <StoryContainer width={storyInfo.width}>
+               {
+                 storyInfo.story.map(storySection => {
+                   if (typeof storySection === "string") {
+                     return <Story>{storySection ?? ""}</Story>
+                   }
+                   return <StoryLink onClick={() => console.log("clicked")} href={storySection.link} target="_blank">{storySection.text ?? ""}</StoryLink>
+                 })
+               }
+             </StoryContainer>
                <Location width={storyInfo.width}>{storyInfo.location ?? ""}</Location>
            </TextContainer>
            {storyInfo.id && <StyledIllustration src={`/illustrations/${storyInfo.id}.svg`}/>}

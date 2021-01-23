@@ -8,7 +8,7 @@ import {
   ZoomControl,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { ErrorModal, HeatPin, Modal, Pin } from "../components";
+import { Error, HeatPin, Modal, Pin } from "../components";
 import pinLegend from "../assets/legendpin.svg";
 import heatLegend from "../assets/legendheat.svg";
 import back from "../assets/back.svg";
@@ -51,6 +51,7 @@ const StyledMap = styled(MapContainer)`
     text-shadow: 0.8px 0.8px 0px  #fff, -0.8px -0.8px 0px  #fff, 0.8px -0.8px 0px  #fff, -0.8px 0.8px 0px  #fff;
     border-radius: 0;
     cursor: cell;
+    z-index: 500;
 
     :first-child {
       font-size: 70px;
@@ -77,7 +78,7 @@ const ButtonBottomLeft = styled.div`
   cursor: crosshair;
   bottom: 3vh;
   left: 2vw;
-  z-index: 900;
+  z-index: 500;
 
   a:link{
     text-decoration: none;
@@ -91,7 +92,7 @@ const ButtonTopLeft = styled.a`
   cursor: crosshair;
   top: 2vh;
   left: 2vw;
-  z-index: 900;
+  z-index: 500;
   text-decoration: none;
 `;
 
@@ -102,7 +103,7 @@ const ButtonText = styled.div`
   letter-spacing: 0.06em;
   color: #14161b;
   text-shadow: 0.8px 0.8px 0px  #fff, -0.8px -0.8px 0px  #fff, 0.8px -0.8px 0px  #fff, -0.8px 0.8px 0px  #fff;
-  z-index: 900;
+  z-index: 500;
 
   &:hover {
     cursor: cell;
@@ -123,7 +124,7 @@ const RecenterButton = styled.button`
   background-color: rgba(0,0,0,0);
   border-radius: 0;
   border: 1px solid white;
-  z-index: 900;
+  z-index: 500;
   bottom: 150px;
   right: 2vw;
   cursor: cell;
@@ -147,7 +148,7 @@ const Legend = styled.div`
 
   background-color: rgba(0,0,0,0);
   border: 1px solid white;
-  z-index: 900;
+  z-index: 500;
 `;
 
 const LegendItem = styled.p`
@@ -168,12 +169,14 @@ export function UWMap() {
   const [heatmapCoordinates, setHeatmapCoordinates] = useState([]);
   const [featuredPinData, setFeaturedPinData] = useState([]);
   const [storyInfo, setStoryInfo] = useState(undefined);
+  const [error, setError] = useState(false);
   const zoom = 16.25;
   const minZoom = 14.5;
   const maxZoom = 18;
   const zoomSnap = 0;
   const zoomDelta = 0.5;
   const currentLocation = { lat: 43.471, lng: -80.543 };
+  const history = useHistory();
 
   useEffect(() => {
     fetch("/heatmap")
@@ -184,6 +187,15 @@ export function UWMap() {
       });
   }, [setHeatmapCoordinates, setFeaturedPinData]);
 
+  useEffect(() => {
+    if (heatmapCoordinates.length === 0 && !error) {
+      let timerFunc = setTimeout(() => {
+        setError(true);
+      }, 5000);
+      return () => clearTimeout(timerFunc);
+    }
+  }, [heatmapCoordinates, error]);
+
   const handleOpenModal = (s) => {
     setStoryInfo(s);
   };
@@ -192,13 +204,9 @@ export function UWMap() {
     setStoryInfo(undefined);
   };
 
-  const history = useHistory();
-
-  const isConnected = true;
-
   return (
     <React.Fragment>
-    {isConnected
+    {!error
     ?  <Container>
         <StyledMap
           center={currentLocation}
@@ -250,7 +258,7 @@ export function UWMap() {
         )}
       </Container>
 
-    : <ErrorModal/>
+    : <Error/>
       }
     </React.Fragment>
   );

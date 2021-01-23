@@ -7,7 +7,7 @@ const Container = styled.div`
     height: 100vh;
     width: 100vw;
     position: absolute;
-    z-index: 2000;
+    z-index: 500;
     background-color: #14161b;
     opacity: 0.8;
 `;
@@ -61,7 +61,7 @@ const Body = styled.p`
     top: 180px;
 `;
 
-export function ErrorModal(){
+export function Error(){
   function refreshPage() {
     window.location.reload(false);
   }
