@@ -27,8 +27,8 @@ const StyledMap = styled(MapContainer)`
   }
 
   .leaflet-control-zoom {
-    right: 2vw;
-    bottom: 30px;
+    left: 2vw;
+    bottom: 200px;
     margin: 0;
     cursor: cell;
   }
@@ -58,6 +58,13 @@ const StyledMap = styled(MapContainer)`
     :last-child {
       font-size: 50px;
     }
+
+    &:hover {
+      cursor: cell;
+      text-shadow: 0;
+      color: white;
+      text-shadow: none;
+    }
   }
 `;
 
@@ -76,7 +83,7 @@ const ButtonBottomLeft = styled.div`
   position: absolute;
   cursor: crosshair;
   bottom: 3vh;
-  left: 2vw;
+  right: 2vw;
   z-index: 500;
 
   a:link{
@@ -90,7 +97,7 @@ const ButtonTopLeft = styled.a`
   position: absolute;
   cursor: crosshair;
   top: 2vh;
-  left: 2vw;
+  right: 2vw;
   z-index: 500;
   text-decoration: none;
 `;
@@ -124,8 +131,8 @@ const RecenterButton = styled.button`
   border-radius: 0;
   border: 1px solid white;
   z-index: 500;
-  bottom: 150px;
-  right: 2vw;
+  top: 3vh;
+  left: 2vw;
   cursor: cell;
 `;
 
@@ -135,7 +142,7 @@ const Legend = styled.div`
   width: auto;
   height: 112px;
   bottom: 30px;
-  right: 100px;
+  left: 2vw;
   padding: 16px;
 
   font-family: 'Anonymous Pro', mono;
@@ -219,14 +226,14 @@ export function UWMap({ redirectPage }) {
           <TileLayer
             url={`https://api.mapbox.com/styles/v1/lesliex/ckiax2fyd06rh19nzhq6680a8/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibGVzbGlleCIsImEiOiJja2k3eW1jZ2cwMGwxMzBwbGx3Y3U1bDQzIn0.UdTT7u_4ZTlr9QAUIv75qA`}
           />
-          <ZoomControl position="bottomright" />
-          <AttributionControl position="bottomleft" />
+          <ZoomControl position="bottomleft" />
+          <AttributionControl position="bottomright" />
           <ButtonTopLeft href="https://docs.google.com/document/d/1BLiDYif7sKWhhHMilXTnNVRLqB9e47-EDg3NPijdsVU/edit" target="_blank" rel="noreferrer"><ButtonText>about</ButtonText></ButtonTopLeft>
           <ButtonBottomLeft> <a href="https://forms.gle/hbacdKVqpG9jk7Hw9" target="_blank" rel="noreferrer"><ButtonText>where have you cried?</ButtonText></a></ButtonBottomLeft>
           <RecenterButton onClick={() => redirectPage("home")}><img src={back} alt="Back button" width="22px" height="22px" style={{paddingRight:'2px'}}/></RecenterButton>
           <Legend><i>MAP LEGEND</i>
             <LegendItem><img src={pinLegend} alt="Pin" width="22px" height="24px" style={{paddingRight:'12px'}}/> Featured story </LegendItem>
-            <LegendItem><img src={heatLegend} alt="heat spot" width="20px" height="22px" style={{paddingRight:'14px'}}/> Places we've cried </LegendItem>
+            <LegendItem><img src={heatLegend} alt="heat spot" width="20px" height="22px" style={{paddingRight:'14px'}}/> Places students have cried </LegendItem>
           </Legend>
           {heatmapCoordinates.map((pin, key) => {
             return <HeatPin position={[pin.lat, pin.lng]} key={key}/>;
