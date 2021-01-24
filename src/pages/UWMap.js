@@ -8,7 +8,7 @@ import {
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { Error, HeatPin, Modal, Pin } from "../components";
-import pinLegend from "../assets/legendpin.svg";
+import pinLegend from "../assets/pin.svg";
 import heatLegend from "../assets/legendheat.svg";
 import back from "../assets/back.svg";
 
@@ -215,7 +215,7 @@ export function UWMap({ redirectPage }) {
           zoomDelta={zoomDelta}
           zoomControl={false}
           attributionControl={false}
-        > 
+        >
           <TileLayer
             url={`https://api.mapbox.com/styles/v1/lesliex/ckiax2fyd06rh19nzhq6680a8/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibGVzbGlleCIsImEiOiJja2k3eW1jZ2cwMGwxMzBwbGx3Y3U1bDQzIn0.UdTT7u_4ZTlr9QAUIv75qA`}
           />
