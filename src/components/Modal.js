@@ -99,8 +99,8 @@ const StoryLink = styled.a`
     z-index: 1500;
 
     &:hover {
-      cursor: pointer;
-  }
+      cursor: cell;
+    }
 
     @media ${device.laptopL} {
         font-size: 18px;

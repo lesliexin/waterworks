@@ -1,5 +1,4 @@
 import React from 'react';
-import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import underline from "../assets/Underline.svg";
 import arrow from "../assets/Arrow.svg";
@@ -117,8 +116,7 @@ const Link = styled.div`
     }
 `;
 
-export function Home() {
-    const history = useHistory();
+export function Home({ redirectPage }) {
     return (
         <Container>
         <Face>
@@ -167,7 +165,7 @@ export function Home() {
           </Mouth>
 
           <PrimaryCTA>
-            <Link alt="Entry Link" onClick={() => {history.push("/map")}}>
+            <Link alt="Entry Link" onClick={() => redirectPage("map")}>
             <svg width='200px' height='90px'>
               <defs>
               <path id='enter' d='M0.924805 1C20.864 26.7386 60.897 54.5941 88.4837 61.4857C133.13 72.6391 170.769 69.0867 228.925 53.7641'/>

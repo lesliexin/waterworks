@@ -1,22 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserView, MobileView } from 'react-device-detect';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home, UWMap, Mobile } from "./pages";
 
 function App() {
+  const [page, setPage] = useState("home");
+
+  const redirectPage = (newPage) => {
+    setPage(newPage);
+  }
+
   return (
     <>
     <BrowserView>
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/map">
-          <UWMap />
-        </Route>
-      </Switch>
-    </Router>
+    {
+      page === "home" ? <Home redirectPage={redirectPage}/> : <UWMap redirectPage={redirectPage}/>
+    }
     </BrowserView>
     <MobileView>
       <Mobile />

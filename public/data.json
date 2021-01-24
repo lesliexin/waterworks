@@ -77,21 +77,21 @@
           "link": "https://www.healthline.com/health/depression/medication-list"
         }
       ],
-      "location": "Village 1 West 5 Tower 3rd Floor",
+      "location": ["Village 1 West 5 Tower 3rd Floor"],
       "width": "100%",
       "lat": 43.47212743,
       "lng": -80.55085139
     },
     {
       "id": 5,
-      "story": "It was a late night walking home from some tutorial, the orange florescent lighting in the rock garden reminded me of the street lamps at home. I missed home.",
+      "story": ["It was a late night walking home from some tutorial, the orange florescent lighting in the rock garden reminded me of the street lamps at home. I missed home."],
       "location": "Rock garden",
       "lat": 43.4715505,
       "lng": -80.54361584
     },
     {
       "id": 6,
-      "story": "I had just gotten two large pieces of bad news and on my way to write a midterm. The first was a disappointing grade on a midterm I thought I did well on. The second was much worse, the fact that my dad lost his job, which put my family into a much less financially secure position",
+      "story": ["I had just gotten two large pieces of bad news and on my way to write a midterm. The first was a disappointing grade on a midterm I thought I did well on. The second was much worse, the fact that my dad lost his job, which put my family into a much less financially secure position"],
       "location": "B1 1st floor bathrooms across from QNC entrance",
       "width": "55%",
       "lat": 43.47099556,
@@ -208,7 +208,7 @@
     },
     {
       "id": 14,
-      "story": "Job rankings were due at 2pm that day and at 12pm noon i still had no idea what i was going to input",
+      "story": ["Job rankings were due at 2pm that day and at 12pm noon i still had no idea what i was going to input"],
       "location": "E5 4th floor ",
       "lat": 43.47283014,
       "lng": -80.53995578
@@ -224,7 +224,7 @@
         ". Each time I felt like the world was ending and I was a failure. That I had no future, there was angry, sadness, bitterness, jealousy. ",
         {
           "text": "The entire range of emotions.",
-          "link": "https://wusa.ca/services/empower-me"
+          "link": "http://feelingswheel.com/"
         }
       ],
       "location": "Walkway between the west side of PAC and the SLC doors with some beautiful old trees.",
@@ -234,7 +234,7 @@
     },
     {
       "id": 16,
-      "story": "After pulling an all-nighter and having an exhausting lab period, I was particularly sensitive to verbal criticisms from a teaching assistant.",
+      "story": ["After pulling an all-nighter and having an exhausting lab period, I was particularly sensitive to verbal criticisms from a teaching assistant."],
       "location": "STC 5th floor",
       "lat": 43.47085733,
       "lng": -80.54348256

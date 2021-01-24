@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import {
   AttributionControl,
@@ -165,7 +164,7 @@ const LegendItem = styled.p`
 `;
 
 
-export function UWMap() {
+export function UWMap({ redirectPage }) {
   const [heatmapCoordinates, setHeatmapCoordinates] = useState([]);
   const [featuredPinData, setFeaturedPinData] = useState([]);
   const [storyInfo, setStoryInfo] = useState(undefined);
@@ -176,7 +175,6 @@ export function UWMap() {
   const zoomSnap = 0;
   const zoomDelta = 0.5;
   const currentLocation = { lat: 43.471, lng: -80.543 };
-  const history = useHistory();
 
   useEffect(() => {
     fetch("/heatmap")
@@ -217,7 +215,7 @@ export function UWMap() {
           zoomDelta={zoomDelta}
           zoomControl={false}
           attributionControl={false}
-        >
+        > 
           <TileLayer
             url={`https://api.mapbox.com/styles/v1/lesliex/ckiax2fyd06rh19nzhq6680a8/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibGVzbGlleCIsImEiOiJja2k3eW1jZ2cwMGwxMzBwbGx3Y3U1bDQzIn0.UdTT7u_4ZTlr9QAUIv75qA`}
           />
@@ -225,7 +223,7 @@ export function UWMap() {
           <AttributionControl position="bottomleft" />
           <ButtonTopLeft href="https://docs.google.com/document/d/1BLiDYif7sKWhhHMilXTnNVRLqB9e47-EDg3NPijdsVU/edit" target="_blank" rel="noreferrer"><ButtonText>about</ButtonText></ButtonTopLeft>
           <ButtonBottomLeft> <a href="https://forms.gle/hbacdKVqpG9jk7Hw9" target="_blank" rel="noreferrer"><ButtonText>where have you cried?</ButtonText></a></ButtonBottomLeft>
-          <RecenterButton onClick={() => {history.push("/")}}><img src={back} alt="Back button" width="22px" height="22px" style={{paddingRight:'2px'}}/></RecenterButton>
+          <RecenterButton onClick={() => redirectPage("home")}><img src={back} alt="Back button" width="22px" height="22px" style={{paddingRight:'2px'}}/></RecenterButton>
           <Legend><i>MAP LEGEND</i>
             <LegendItem><img src={pinLegend} alt="Pin" width="22px" height="24px" style={{paddingRight:'12px'}}/> Featured story </LegendItem>
             <LegendItem><img src={heatLegend} alt="heat spot" width="20px" height="22px" style={{paddingRight:'14px'}}/> Places we've cried </LegendItem>
