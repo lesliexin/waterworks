@@ -1,5 +1,4 @@
 import React from 'react';
-import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import "../assets/fonts.css";
 
@@ -58,7 +57,6 @@ const Link = styled.div`
 `;
 
 export function Mobile() {
-      const history = useHistory();
   return (
     <Container>
     <Title>
@@ -66,7 +64,7 @@ export function Mobile() {
     </Title>
     <Body>
     Mind using a laptop or desktop?
-    <a href="https://docs.google.com/document/d/1BLiDYif7sKWhhHMilXTnNVRLqB9e47-EDg3NPijdsVU/edit" target="_blank">
+    <a href="https://docs.google.com/document/d/1BLiDYif7sKWhhHMilXTnNVRLqB9e47-EDg3NPijdsVU/edit" target="_blank" rel="noreferrer">
     <Link>
     or, read more about this project
     </Link>
