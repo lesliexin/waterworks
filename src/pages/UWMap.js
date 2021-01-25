@@ -222,9 +222,9 @@ export function UWMap({ redirectPage }) {
           zoomDelta={zoomDelta}
           zoomControl={false}
           attributionControl={false}
-        >
+        > 
           <TileLayer
-            url={`https://api.mapbox.com/styles/v1/lesliex/ckiax2fyd06rh19nzhq6680a8/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibGVzbGlleCIsImEiOiJja2k3eW1jZ2cwMGwxMzBwbGx3Y3U1bDQzIn0.UdTT7u_4ZTlr9QAUIv75qA`}
+            url={`https://api.mapbox.com/styles/v1/lesliex/ckiax2fyd06rh19nzhq6680a8/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic291cGF0dGFjayIsImEiOiJja2tjb2hib2ExMXFxMm5yMXVrbWRjcTUwIn0.w5HPgt53kloF-kkBD8a2eA`}
           />
           <ZoomControl position="bottomleft" />
           <AttributionControl position="bottomright" />
