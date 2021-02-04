@@ -224,7 +224,7 @@ export function UWMap({ redirectPage }) {
           attributionControl={false}
         > 
           <TileLayer
-            url={`https://api.mapbox.com/styles/v1/lesliex/ckiax2fyd06rh19nzhq6680a8/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic291cGF0dGFjayIsImEiOiJja2tjb2hib2ExMXFxMm5yMXVrbWRjcTUwIn0.w5HPgt53kloF-kkBD8a2eA`}
+            url={`https://api.mapbox.com/styles/v1/lesliex/ckiax2fyd06rh19nzhq6680a8/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoicXVlZW5pd3UiLCJhIjoiY2traXJ4aXluMDdhbTJua2h0NjIxbTl1aCJ9.YgI4LAGwQLeazZug-OsxWQ`}
           />
           <ZoomControl position="bottomleft" />
           <AttributionControl position="bottomright" />
