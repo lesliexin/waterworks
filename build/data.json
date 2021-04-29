@@ -265,7 +265,12 @@
     {
       "id": 18,
       "story": [
-        "Being an international student is tough. And especially during the pandemic, my birthday came and went and I had no one to spend it with. I called my mum and dad that day and tried my best to hide my tears but they knew something was wrong. The call lasted 3 hours. I cried for at least 2/3s of that time. I had no energy left after that and slept like a baby that night."
+        "Being an international student is tough. And ",
+        {
+          "text": "especially during the pandemic",
+          "link": "https://www.cbc.ca/news/canada/nova-scotia/pandemic-university-students-mental-health-stress-1.5868705"
+        },
+        ", my birthday came and went and I had no one to spend it with. I called my mum and dad that day and tried my best to hide my tears but they knew something was wrong. The call lasted 3 hours. I cried for at least 2/3s of that time. I had no energy left after that and slept like a baby that night."
       ],
       "location": "333 Lester street",
       "lat": 43.472569255978804,
@@ -292,7 +297,17 @@
     {
       "id": 21,
       "story": [
-        "*Trigger warning: eating disorder* I was dealing with an eating disorder as a result of stress. School and co-op felt out of my control and thus my body image and the food I was consuming seemed like the only thing I had control over. I experienced a variety of eating disorders from binge eating and purging to orthorexia, when I lost weight I thought I would be happy but additional stress from thinking about food consumed my life. I lost friends, isolated myself from social events. I was scared of eating, scared of not working out and scared of how others would perceive me once they found out about my disordered eating. I secretly cried in my room almost everyday at Icon over how I have no control over anything in my life. I'm still on the recovery journey and in a much happier place, but often think back to how lonely and unhappy I was, lived so close with friends yet felt so disconnected."
+        "*Trigger warning: eating disorder* I was dealing with an eating disorder as a result of stress. School and co-op felt out of my control, so the food I was consuming seemed like the only thing I could control - causing ",
+        {
+          "text": "binge eating and purging",
+          "link": "https://www.nationaleatingdisorders.org/learn/by-eating-disorder/bulimia"
+        },
+        ", and ",
+        {
+          "text": "orthorexia",
+          "link": "https://www.nationaleatingdisorders.org/learn/by-eating-disorder/other/orthorexia"
+        },
+        ". When I lost weight I thought I would be happy but additional stress from thinking about food consumed my life. I was scared of eating, scared of not working out and scared of how others would perceive me once they found out about my disordered eating, so I isolated myself from social events. I secretly cried in my room almost everyday at Icon. I'm still on the recovery journey and in a much happier place, but often think back to how lonely and unhappy I was, lived so close with friends yet felt so disconnected."
       ],
       "location": "Icon South Tower ",
       "lat": 43.47583954714858,
@@ -301,7 +316,12 @@
     {
       "id": 22,
       "story": [
-        "In the midst of a lengthy ADHD accommodation process, I got emotional in front of a professor. To my surprise, he got emotional as well and we shared stories of difficulties and cried it out."
+        "In the midst of a lengthy ",
+        {
+          "text": "ADHD",
+          "link": "https://www.psychiatry.org/patients-families/adhd/what-is-adhd"
+        },
+        " accommodation process, I got emotional in front of a professor. To my surprise, he got emotional as well and we shared stories of difficulties and cried it out."
       ],
       "location": "M3 3rd floor",
       "lat": 43.473294183876604,
@@ -309,7 +329,14 @@
     },
     {
       "id": 23,
-      "story": ["I tried learning all of linear algebra in one night."],
+      "story": [
+        "I tried learning all of ",
+        {
+          "text": "linear algebra",
+          "link": "https://www.khanacademy.org/math/linear-algebra"
+        },
+        " in one night."
+      ],
       "location": "MKV",
       "lat": 43.47147483814553,
       "lng": -80.55284541010623
@@ -317,7 +344,11 @@
     {
       "id": 24,
       "story": [
-        "Cried after one of my first interviews where they asked me to implement merge sort. Found out later on that the class I skipped for that interview taught merge sort."
+        "Cried after one of my first interviews where they asked me to implement merge sort. Found out later on that the class I skipped for that interview taught ",
+        {
+          "text": "merge sort.",
+          "link": "https://www.geeksforgeeks.org/merge-sort/"
+        }
       ],
       "location": "Tatham Centre ",
       "lat": 43.469036194678786,
@@ -326,7 +357,17 @@
     {
       "id": 25,
       "story": [
-        "TW: Eating disorders. I spent almost every lunch time in 2nd year in this stairwell while struggling with anorexia. It was small and quiet. Rarely anyone interrupted me. I liked it because it was near the Glow Centre, so I got to hear my friends talking and laughing and eating together as I passed by to my hiding spot. I wanted so badly to be with them, but I couldn't handle anyone seeing how much I was eating or judging me for it. So I settled with hearing their voices and eating in silence on the nearby stairs. One day, as I picked away at a small, sad salad, the depth of my sadness hit me and I cried."
+        "TW: Eating disorders. I spent almost every lunch time in 2nd year in this stairwell while struggling with ",
+        {
+          "text": "anorexia",
+          "link": "https://www.nationaleatingdisorders.org/learn/by-eating-disorder/anorexia"
+        },
+        ". It was small and quiet. Rarely anyone interrupted me. I liked it because it was near the ",
+        {
+          "text": "Glow Centre",
+          "link": "https://wusa.ca/services/glow-centre-sexual-and-gender-diversity"
+        },
+        ", so I got to hear my friends talking and laughing and eating together as I passed by to my hiding spot. I wanted so badly to be with them, but I couldn't handle anyone seeing how much I was eating or judging me for it. So I settled with hearing their voices and eating in silence on the nearby stairs. One day, as I picked away at a small, sad salad, the depth of my sadness hit me and I cried."
       ],
       "location": "SLC Stairwell",
       "lat": 43.471737319925715,
@@ -371,7 +412,12 @@
     {
       "id": 30,
       "story": [
-        "I was studying for a calculus final for the following week, when I got a call from my mom that a relative had just passed away. I felt guilty that I didn't talk with him much, and wished I could be with my family. Stress about passing that exam didn't help either. "
+        "I was studying for a calculus final for the following week, when I got a call from my mom that a relative had just passed away. I felt ",
+        {
+          "text": "guilty",
+          "link": "https://www.mindtools.com/pages/article/dealing-with-guilt.htm"
+        },
+        " that I didn't talk with him much, and wished I could be with my family. Stress about passing that exam didn't help either. "
       ],
       "location": "CPH 1st floor studio",
       "lat": 43.471325622630694,
@@ -389,7 +435,12 @@
     {
       "id": 32,
       "story": [
-        "After the last night of Orientation Week, I went to get breakfast at Mel's Diner with fellow orientation leaders. I cried tears of exhaustion and happiness that we helped welcome thousands of first-year students to the University of Waterloo."
+        "After the last night of ",
+        {
+          "text": "Orientation Week",
+          "link": "https://wusa.ca/get-involved/orientation"
+        },
+        ", I went to get breakfast at Mel's Diner with fellow orientation leaders. I cried tears of exhaustion and happiness that we helped welcome thousands of first-year students to the University of Waterloo."
       ],
       "location": "Mel's Diner",
       "lat": 43.47300888631162,
@@ -425,7 +476,12 @@
     {
       "id": 36,
       "story": [
-        "I had just got broken up with for the first time in my life and cried in sadness. My wonderful roommate brought me bubble tea and then I cried out of happiness."
+        "I had just got ",
+        {
+          "text": "broken up with",
+          "link": "https://www.healthline.com/health/coping-with-break-up"
+        },
+        " for the first time in my life and cried in sadness. My wonderful roommate brought me bubble tea and then I cried out of happiness."
       ],
       "location": "Conrad Grebel residence fourth floor short end ",
       "lat": 43.466330171387064,
@@ -443,7 +499,12 @@
     {
       "id": 38,
       "story": [
-        "I was at rock bottom in my 2A term - constantly skipped class to cry in bed because I felt so overwhelmed and alone. Ended up failing 3 classes and got kicked out the program which led me to cry myself to sleep almost every night for a year by telling myself how big of a failure I am. Thankfully things have gotten better and I'm about to graduate from another program that I love!"
+        "I was at rock bottom in my 2A term - constantly skipped class to cry in bed because I felt so overwhelmed and alone. Ended up failing 3 classes and got kicked out the program which led me to cry myself to sleep almost every night for a year by telling myself how big of a failure I am. Thankfully things have gotten better and I'm about to ",
+        {
+          "text": "graduate from another program",
+          "link": "https://uwaterloo.ca/beyond-ideas/stories/choosing-uni/changing-your-mind-what-study"
+        },
+        " that I love!"
       ],
       "location": "V1 N6 3rd Floor",
       "lat": 43.472092085206384,
