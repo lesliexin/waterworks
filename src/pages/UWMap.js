@@ -42,12 +42,13 @@ const StyledMap = styled(MapContainer)`
   .leaflet-bar a {
     width: 48px;
     height: 48px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     border: 1px solid white;
     color: none;
     line-height: 45px;
-    font-family: 'presicav', sans-serif;
-    text-shadow: 0.8px 0.8px 0px  #fff, -0.8px -0.8px 0px  #fff, 0.8px -0.8px 0px  #fff, -0.8px 0.8px 0px  #fff;
+    font-family: "presicav", sans-serif;
+    text-shadow: 0.8px 0.8px 0px #fff, -0.8px -0.8px 0px #fff,
+      0.8px -0.8px 0px #fff, -0.8px 0.8px 0px #fff;
     border-radius: 0;
     cursor: cell;
     z-index: 500;
@@ -86,10 +87,9 @@ const ButtonBottomLeft = styled.div`
   right: 2vw;
   z-index: 500;
 
-  a:link{
+  a:link {
     text-decoration: none;
   }
-
 `;
 
 const ButtonTopLeft = styled.a`
@@ -103,12 +103,13 @@ const ButtonTopLeft = styled.a`
 `;
 
 const ButtonText = styled.div`
-  font-family: 'presicav', sans-serif;
+  font-family: "presicav", sans-serif;
   font-size: 42px;
   line-height: 52px;
   letter-spacing: 0.06em;
   color: #14161b;
-  text-shadow: 0.8px 0.8px 0px  #fff, -0.8px -0.8px 0px  #fff, 0.8px -0.8px 0px  #fff, -0.8px 0.8px 0px  #fff;
+  text-shadow: 0.8px 0.8px 0px #fff, -0.8px -0.8px 0px #fff,
+    0.8px -0.8px 0px #fff, -0.8px 0.8px 0px #fff;
   z-index: 500;
 
   &:hover {
@@ -127,7 +128,7 @@ const RecenterButton = styled.button`
   font-weight: 500;
   border: none;
   color: white;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   border-radius: 0;
   border: 1px solid white;
   z-index: 500;
@@ -145,14 +146,14 @@ const Legend = styled.div`
   left: 2vw;
   padding: 16px;
 
-  font-family: 'Anonymous Pro', mono;
+  font-family: "Anonymous Pro", mono;
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 32px;
   color: white;
   font-weight: 400;
 
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid white;
   z-index: 500;
 `;
@@ -161,7 +162,7 @@ const LegendItem = styled.p`
   display: flex;
   align-items: left;
 
-  font-family: 'Anonymous Pro', mono;
+  font-family: "Anonymous Pro", mono;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0px;
@@ -170,12 +171,12 @@ const LegendItem = styled.p`
   padding-right: 32px;
 `;
 
-
 export function UWMap({ redirectPage }) {
   const [heatmapCoordinates, setHeatmapCoordinates] = useState([]);
   const [featuredPinData, setFeaturedPinData] = useState([]);
   const [storyInfo, setStoryInfo] = useState(undefined);
   const [error, setError] = useState(false);
+  const [lastClicked, setLastClicked] = useState(-1);
   const zoom = 16.25;
   const minZoom = 14.5;
   const maxZoom = 18;
@@ -203,6 +204,7 @@ export function UWMap({ redirectPage }) {
 
   const handleOpenModal = (s) => {
     setStoryInfo(s);
+    setLastClicked(s.id);
   };
 
   const handleCloseModal = () => {
@@ -211,60 +213,100 @@ export function UWMap({ redirectPage }) {
 
   return (
     <React.Fragment>
-    {!error
-    ?  <Container>
-        <StyledMap
-          center={currentLocation}
-          zoom={zoom}
-          minZoom={minZoom}
-          maxZoom={maxZoom}
-          zoomSnap={zoomSnap}
-          zoomDelta={zoomDelta}
-          zoomControl={false}
-          attributionControl={false}
-        > 
-          <TileLayer
-            url={`https://api.mapbox.com/styles/v1/lesliex/ckiax2fyd06rh19nzhq6680a8/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoicXVlZW5pd3UiLCJhIjoiY2traXJ4aXluMDdhbTJua2h0NjIxbTl1aCJ9.YgI4LAGwQLeazZug-OsxWQ`}
-          />
-          <ZoomControl position="bottomleft" />
-          <AttributionControl position="bottomright" />
-          <ButtonTopLeft href="https://docs.google.com/document/d/1BLiDYif7sKWhhHMilXTnNVRLqB9e47-EDg3NPijdsVU/edit" target="_blank" rel="noreferrer"><ButtonText>about</ButtonText></ButtonTopLeft>
-          <ButtonBottomLeft> <a href="https://forms.gle/hbacdKVqpG9jk7Hw9" target="_blank" rel="noreferrer"><ButtonText>where have you cried?</ButtonText></a></ButtonBottomLeft>
-          <RecenterButton onClick={() => redirectPage("home")}><img src={back} alt="Back button" width="22px" height="22px" style={{paddingRight:'2px'}}/></RecenterButton>
-          <Legend><i>MAP LEGEND</i>
-            <LegendItem><img src={pinLegend} alt="Pin" width="22px" height="24px" style={{paddingRight:'12px'}}/> Featured story </LegendItem>
-            <LegendItem><img src={heatLegend} alt="heat spot" width="20px" height="22px" style={{paddingRight:'14px'}}/> Places students have cried </LegendItem>
-          </Legend>
-          {heatmapCoordinates.map((pin, key) => {
-            return <HeatPin position={[pin.lat, pin.lng]} key={key}/>;
-          })}
-          {featuredPinData.map((pin, key) => {
-            return (
-              <Pin
-                key={key}
-                position={[pin.lat, pin.lng]}
-                storyInfo={{
-                  id: pin.id,
-                  story: pin.story,
-                  location: pin.location,
-                  width: pin.width ?? "50%",
-                  align: pin.align ?? "center"
-                }}
-                handleClick={handleOpenModal}
+      {!error ? (
+        <Container>
+          <StyledMap
+            center={currentLocation}
+            zoom={zoom}
+            minZoom={minZoom}
+            maxZoom={maxZoom}
+            zoomSnap={zoomSnap}
+            zoomDelta={zoomDelta}
+            zoomControl={false}
+            attributionControl={false}
+          >
+            <TileLayer
+              url={`https://api.mapbox.com/styles/v1/lesliex/ckiax2fyd06rh19nzhq6680a8/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoicXVlZW5pd3UiLCJhIjoiY2traXJ4aXluMDdhbTJua2h0NjIxbTl1aCJ9.YgI4LAGwQLeazZug-OsxWQ`}
+            />
+            <ZoomControl position="bottomleft" />
+            <AttributionControl position="bottomright" />
+            <ButtonTopLeft
+              href="https://docs.google.com/document/d/1BLiDYif7sKWhhHMilXTnNVRLqB9e47-EDg3NPijdsVU/edit"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ButtonText>about</ButtonText>
+            </ButtonTopLeft>
+            <ButtonBottomLeft>
+              {" "}
+              <a
+                href="https://forms.gle/hbacdKVqpG9jk7Hw9"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ButtonText>where have you cried?</ButtonText>
+              </a>
+            </ButtonBottomLeft>
+            <RecenterButton onClick={() => redirectPage("home")}>
+              <img
+                src={back}
+                alt="Back button"
+                width="22px"
+                height="22px"
+                style={{ paddingRight: "2px" }}
               />
-            );
-          })}
-        </StyledMap>
-        {storyInfo && (
-          <Modal
-            handleClick={handleCloseModal}
-            storyInfo={storyInfo}
-          />
-        )}
-      </Container>
-
-    : <Error/>
-      }
+            </RecenterButton>
+            <Legend>
+              <i>MAP LEGEND</i>
+              <LegendItem>
+                <img
+                  src={pinLegend}
+                  alt="Pin"
+                  width="22px"
+                  height="24px"
+                  style={{ paddingRight: "12px" }}
+                />{" "}
+                Featured story{" "}
+              </LegendItem>
+              <LegendItem>
+                <img
+                  src={heatLegend}
+                  alt="heat spot"
+                  width="20px"
+                  height="22px"
+                  style={{ paddingRight: "14px" }}
+                />{" "}
+                Places students have cried{" "}
+              </LegendItem>
+            </Legend>
+            {heatmapCoordinates.map((pin, key) => {
+              return <HeatPin position={[pin.lat, pin.lng]} key={key} />;
+            })}
+            {featuredPinData.map((pin, key) => {
+              return (
+                <Pin
+                  key={key}
+                  position={[pin.lat, pin.lng]}
+                  isLastClicked={pin.id === lastClicked}
+                  storyInfo={{
+                    id: pin.id,
+                    story: pin.story,
+                    location: pin.location,
+                    width: pin.width,
+                    align: pin.align ?? "center",
+                  }}
+                  handleClick={handleOpenModal}
+                />
+              );
+            })}
+          </StyledMap>
+          {storyInfo && (
+            <Modal handleClick={handleCloseModal} storyInfo={storyInfo} />
+          )}
+        </Container>
+      ) : (
+        <Error />
+      )}
     </React.Fragment>
   );
 }

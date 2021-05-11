@@ -22,13 +22,14 @@
     },
     {
       "id": 2,
-      "story": ["It was the day that prof. Igor Ivkovic died. Being on a Zoom call where people shared stories helpful in remembering him for the great man he was, and it ended up being good for me, ",
+      "story": [
+        "It was the day that prof. Igor Ivkovic died. Being on a Zoom call where people shared stories helpful in remembering him for the great man he was, and it ended up being good for me, ",
         {
           "text": "but man did it hurt.",
           "link": "https://grievingtogether.ca/what-now/support/canada-info/"
         }
       ],
-        "location": "Wilmot Court South floor 3",
+      "location": "Wilmot Court South floor 3",
       "width": "100%",
       "align": "flex-start",
       "lat": 43.47081263,
@@ -36,14 +37,15 @@
     },
     {
       "id": 3,
-      "story": ["I was in 2A and still",
+      "story": [
+        "I was in 2A and still",
         {
           "text": "recovering from a severe episode of depression",
           "link": "https://www.webmd.com/depression/guide/depression-treatment-options#1"
         },
         " and anxiety a few months prior. I was in the process of adjusting to antidepressants and would occasionally burst into tears arbitrarily. I am happy to say though that once I fully adjusted to my meds, they have made a world of positive difference for me."
       ],
-        "location": "QNC First Floor Bathroom",
+      "location": "QNC First Floor Bathroom",
       "width": "70%",
       "lat": 43.471008614,
       "lng": -80.54344091
@@ -84,14 +86,18 @@
     },
     {
       "id": 5,
-      "story": ["It was a late night walking home from some tutorial, the orange florescent lighting in the rock garden reminded me of the street lamps at home. I missed home."],
+      "story": [
+        "It was a late night walking home from some tutorial, the orange florescent lighting in the rock garden reminded me of the street lamps at home. I missed home."
+      ],
       "location": "Rock garden",
       "lat": 43.4715505,
       "lng": -80.54361584
     },
     {
       "id": 6,
-      "story": ["I had just gotten two large pieces of bad news and on my way to write a midterm. The first was a disappointing grade on a midterm I thought I did well on. The second was much worse, the fact that my dad lost his job, which put my family into a much less financially secure position"],
+      "story": [
+        "I had just gotten two large pieces of bad news and on my way to write a midterm. The first was a disappointing grade on a midterm I thought I did well on. The second was much worse, the fact that my dad lost his job, which put my family into a much less financially secure position"
+      ],
       "location": "B1 1st floor bathrooms across from QNC entrance",
       "width": "55%",
       "lat": 43.47099556,
@@ -124,7 +130,7 @@
         },
         " and I really appreciated that."
       ],
-        "location": "Basement of MC",
+      "location": "Basement of MC",
       "width": "100%",
       "align": "flex-start",
       "lat": 43.47220585,
@@ -170,7 +176,7 @@
         },
         " with my partner at the time. We were both really drunk, mean things were said and I got super emotional and cried. The bouncer had to console me and someone gave me a cigarette."
       ],
-        "location": "Bomber patio",
+      "location": "Bomber patio",
       "lat": 43.47146938,
       "lng": -80.54491154
     },
@@ -202,19 +208,12 @@
         },
         ", and I didn't think I deserved to go here."
       ],
-        "location": "RCH bottom floor washroom",
+      "location": "RCH bottom floor washroom",
       "lat": 43.47034793,
       "lng": -80.54064783
     },
     {
       "id": 14,
-      "story": ["Job rankings were due at 2pm that day and at 12pm noon i still had no idea what i was going to input"],
-      "location": "E5 4th floor ",
-      "lat": 43.47283014,
-      "lng": -80.53995578
-    },
-    {
-      "id": 15,
       "story": [
         "I cried my eyes out here after hardships with first semester & family life. I also had a good cry at the sci link, on a bench near B1. I had just found out my OSAP would be basically nothing due to my stepdad accessing his pension early to save the family home from power of sale and thought I would have to drop out due to ",
         {
@@ -233,14 +232,16 @@
       "lng": -80.54570752
     },
     {
-      "id": 16,
-      "story": ["After pulling an all-nighter and having an exhausting lab period, I was particularly sensitive to verbal criticisms from a teaching assistant."],
+      "id": 15,
+      "story": [
+        "After pulling an all-nighter and having an exhausting lab period, I was particularly sensitive to verbal criticisms from a teaching assistant."
+      ],
       "location": "STC 5th floor",
       "lat": 43.47085733,
       "lng": -80.54348256
     },
     {
-      "id": 17,
+      "id": 16,
       "story": [
         {
           "text": "I had a panic attack",
@@ -251,6 +252,263 @@
       "location": "PAC stairs",
       "lat": 43.4725476,
       "lng": -80.5462543
+    },
+    {
+      "id": 17,
+      "story": [
+        "45 Minutes before a major midterm I was sure I was going to fail, I got a call saying my mom was diagnosed with cancer. I kinda stopped functioning and just cried in front of my friends, who stopped their studying to comfort me. They helped me focus enough to write the midterm, and were there for me afterwards. I'll always be grateful for that."
+      ],
+      "location": "E5 6th Floor Hallway, right in front of 6008",
+      "lat": 43.473141448829026,
+      "lng": -80.54008790310668
+    },
+    {
+      "id": 18,
+      "story": [
+        "Being an international student is tough. And ",
+        {
+          "text": "especially during the pandemic",
+          "link": "https://www.cbc.ca/news/canada/nova-scotia/pandemic-university-students-mental-health-stress-1.5868705"
+        },
+        ", my birthday came and went and I had no one to spend it with. I called my mum and dad that day and tried my best to hide my tears but they knew something was wrong. The call lasted 3 hours. I cried for at least 2/3s of that time. I had no energy left after that and slept like a baby that night."
+      ],
+      "location": "333 Lester street",
+      "lat": 43.472569255978804,
+      "lng": -80.53387372636853
+    },
+    {
+      "id": 19,
+      "story": [
+        "I was stressed out of my mind for my first round of midterms. My parents drove an hour to Waterloo and dropped off some groceries, which is unusual for me. They didn't expect anything in return, and knew I had to study, so they hugged me and drove an hour back. I broke down in tears and couldn't tell why. Just a subtle reminder that I am so lucky to have my family behind me, and how well they know me. "
+      ],
+      "location": "MKV West 2nd Floor",
+      "lat": 43.47118135820634,
+      "lng": -80.55305575849964
+    },
+    {
+      "id": 20,
+      "story": [
+        "I had just written my first midterm of university. I felt uneasy and anxious leaving the exam room. As I was walking out and talking with friends none of my answers were matching up. I started having a panic attack and called my mom. She was quick to comment maybe I had chosen the wrong program. I felt hopeless and like I did not deserve to be here. "
+      ],
+      "location": "CMH 11th Floor ",
+      "lat": 43.470145613725656,
+      "lng": -80.5358060874266
+    },
+    {
+      "id": 21,
+      "story": [
+        "*Trigger warning: eating disorder* I was dealing with an eating disorder as a result of stress. School and co-op felt out of my control, so the food I was consuming seemed like the only thing I could control - causing ",
+        {
+          "text": "binge eating and purging",
+          "link": "https://www.nationaleatingdisorders.org/learn/by-eating-disorder/bulimia"
+        },
+        ", and ",
+        {
+          "text": "orthorexia",
+          "link": "https://www.nationaleatingdisorders.org/learn/by-eating-disorder/other/orthorexia"
+        },
+        ". When I lost weight I thought I would be happy but additional stress from thinking about food consumed my life. I was scared of eating, scared of not working out and scared of how others would perceive me once they found out about my disordered eating, so I isolated myself from social events. I secretly cried in my room almost everyday at Icon. I'm still on the recovery journey and in a much happier place, but often think back to how lonely and unhappy I was, lived so close with friends yet felt so disconnected."
+      ],
+      "location": "Icon South Tower ",
+      "lat": 43.47583954714858,
+      "lng": -80.53854545116506
+    },
+    {
+      "id": 22,
+      "story": [
+        "In the midst of a lengthy ",
+        {
+          "text": "ADHD",
+          "link": "https://www.psychiatry.org/patients-families/adhd/what-is-adhd"
+        },
+        " accommodation process, I got emotional in front of a professor. To my surprise, he got emotional as well and we shared stories of difficulties and cried it out."
+      ],
+      "location": "M3 3rd floor",
+      "lat": 43.473294183876604,
+      "lng": -80.54428689767933
+    },
+    {
+      "id": 23,
+      "story": [
+        "I tried learning all of ",
+        {
+          "text": "linear algebra",
+          "link": "https://www.khanacademy.org/math/linear-algebra"
+        },
+        " in one night."
+      ],
+      "location": "MKV",
+      "lat": 43.47147483814553,
+      "lng": -80.55284541010623
+    },
+    {
+      "id": 24,
+      "story": [
+        "Cried after one of my first interviews where they asked me to implement merge sort. Found out later on that the class I skipped for that interview taught ",
+        {
+          "text": "merge sort.",
+          "link": "https://www.geeksforgeeks.org/merge-sort/"
+        }
+      ],
+      "location": "Tatham Centre ",
+      "lat": 43.469036194678786,
+      "lng": -80.54125257961961
+    },
+    {
+      "id": 25,
+      "story": [
+        "TW: Eating disorders. I spent almost every lunch time in 2nd year in this stairwell while struggling with ",
+        {
+          "text": "anorexia",
+          "link": "https://www.nationaleatingdisorders.org/learn/by-eating-disorder/anorexia"
+        },
+        ". It was small and quiet. Rarely anyone interrupted me. I liked it because it was near the ",
+        {
+          "text": "Glow Centre",
+          "link": "https://wusa.ca/services/glow-centre-sexual-and-gender-diversity"
+        },
+        ", so I got to hear my friends talking and laughing and eating together as I passed by to my hiding spot. I wanted so badly to be with them, but I couldn't handle anyone seeing how much I was eating or judging me for it. So I settled with hearing their voices and eating in silence on the nearby stairs. One day, as I picked away at a small, sad salad, the depth of my sadness hit me and I cried."
+      ],
+      "location": "SLC Stairwell",
+      "lat": 43.471737319925715,
+      "lng": -80.54548999123071
+    },
+    {
+      "id": 26,
+      "story": [
+        "I was diagnosed with 3 mental illnesses. It was relief to finally know what was happening to me. But also, that this was something I would need to treat and medicate for the rest of my life."
+      ],
+      "location": "Mental Health Centre in Ira Needles Hall",
+      "lat": 43.46979874679173,
+      "lng": -80.54336233634798
+    },
+    {
+      "id": 27,
+      "story": [
+        "I learned that my sister had committed suicide and I needed to get away."
+      ],
+      "location": "In the forest behind Health Services",
+      "lat": 43.47043870866021,
+      "lng": -80.54691680937712
+    },
+    {
+      "id": 28,
+      "story": [
+        "My class had a terrible exam. Everyone was confused and thought the content didn't match what we had been taught. And the night after we took it, our professor released the marks to us. I had failed by 1 single point. In the dead of winter, I left my house without a jacket and walked to the edge of the lake. I sat there for a good hour trying to convince myself it was worthwhile to stay alive. It was worth it. I made it home safely that night. "
+      ],
+      "location": "The edge of Silver Lake in Waterloo Park",
+      "lat": 43.46678887948808,
+      "lng": -80.52758906946599
+    },
+    {
+      "id": 29,
+      "story": [
+        "I've always struggled with anxiety and loneliness and I'm pretty shy but I decided to try harder to make new friends once first year began. I finally started making friends but after a while everyone drifted off once they found other people who were more interesting, and I found myself alone once again. I was frustrated and I began to wonder if I was the problem all along."
+      ],
+      "location": "CMH 1st Floor ",
+      "lat": 43.47025715441881,
+      "lng": -80.53613898322295
+    },
+    {
+      "id": 30,
+      "story": [
+        "I was studying for a calculus final for the following week, when I got a call from my mom that a relative had just passed away. I felt ",
+        {
+          "text": "guilty",
+          "link": "https://www.mindtools.com/pages/article/dealing-with-guilt.htm"
+        },
+        " that I didn't talk with him much, and wished I could be with my family. Stress about passing that exam didn't help either. "
+      ],
+      "location": "CPH 1st floor studio",
+      "lat": 43.471325622630694,
+      "lng": -80.53957323314638
+    },
+    {
+      "id": 31,
+      "story": [
+        "It was the night before my first two big papers of graduate school were due. Everyone else in my cohort had already finished and gone out to celebrate, but I was still trying to finish both my papers. I felt like a waste of space in the program and like I was letting down my supervisor. I was alone and it was dark in the graduate student lounge at the time and I remember just putting my head down on the desk and sobbing. It cleared my head enough to finish though, and I did well on both, so at least it had a happy ending. "
+      ],
+      "location": "EV1 357",
+      "lat": 43.46840873621827,
+      "lng": -80.54242063744246
+    },
+    {
+      "id": 32,
+      "story": [
+        "After the last night of ",
+        {
+          "text": "Orientation Week",
+          "link": "https://wusa.ca/get-involved/orientation"
+        },
+        ", I went to get breakfast at Mel's Diner with fellow orientation leaders. I cried tears of exhaustion and happiness that we helped welcome thousands of first-year students to the University of Waterloo."
+      ],
+      "location": "Mel's Diner",
+      "lat": 43.47300888631162,
+      "lng": -80.53553791568562
+    },
+    {
+      "id": 33,
+      "story": [
+        "My tears were collected during my undergrad in my 4A capstone project midterm update meeting. That meeting showed me that nobody in my Mech Eng, department believed in me or understood how I wanted to express engineering. Luckily, my supervisor, from a different department, did."
+      ],
+      "location": "CPH Meeting Room",
+      "lat": 43.47076133307988,
+      "lng": -80.53921849227429
+    },
+    {
+      "id": 34,
+      "story": [
+        "I was so overwhelmed with emotion from nothing in particular. Just being so sad for so long and not being able to contain it anymore. I had no control. At least I could control where I was, I chose to run and hide in the big cedar trees by Laurel creek, letting them shield me from others' stares."
+      ],
+      "location": "Hiding in the trees near Laurel Creek",
+      "lat": 43.46668622532123,
+      "lng": -80.54338887551775
+    },
+    {
+      "id": 35,
+      "story": [
+        "Graduation... It should have been a crowning moment for my mental state, but during the ceremony I still felt like such a failure. That day I realized how important it was that I take care of myself. I could not even be happy the day I had diploma in hand with my parents and best friend onlooking. It is the most concerning sensation to be surrounded by happy people, and feel nothing but emptiness inside, and the tears running down your face."
+      ],
+      "location": "Grad Ceremony in PAC ",
+      "lat": 43.472169771575565,
+      "lng": -80.54615373861722
+    },
+    {
+      "id": 36,
+      "story": [
+        "I had just got ",
+        {
+          "text": "broken up with",
+          "link": "https://www.healthline.com/health/coping-with-break-up"
+        },
+        " for the first time in my life and cried in sadness. My wonderful roommate brought me bubble tea and then I cried out of happiness."
+      ],
+      "location": "Conrad Grebel residence fourth floor short end ",
+      "lat": 43.466330171387064,
+      "lng": -80.54459444856656
+    },
+    {
+      "id": 37,
+      "story": [
+        "It was my first day of second year. I had just finished a theatre class (ML building), and felt I was struggling with socializing. I left class and bumped into a friend from high school, but I was so anxious I couldn't talk. I made my way to the Davis Centre got my self some food and sat down. I just started crying uncontrollably - I felt really alone. Some guy came up and checked on me. I felt embarrassed, being a big guy just crying in the middle of a crowd of people, but the stranger didn't shame me, instead calmed me down. That was the first time I cried on campus, in a year that would end with me dropping out. "
+      ],
+      "location": "William G. Davis - Cafeteria ",
+      "lat": 43.47275018913275,
+      "lng": -80.54335935728648
+    },
+    {
+      "id": 38,
+      "story": [
+        "I was at rock bottom in my 2A term - constantly skipped class to cry in bed because I felt so overwhelmed and alone. Ended up failing 3 classes and got kicked out the program which led me to cry myself to sleep almost every night for a year by telling myself how big of a failure I am. Thankfully things have gotten better and I'm about to ",
+        {
+          "text": "graduate from another program",
+          "link": "https://uwaterloo.ca/beyond-ideas/stories/choosing-uni/changing-your-mind-what-study"
+        },
+        " that I love!"
+      ],
+      "location": "V1 N6 3rd Floor",
+      "lat": 43.472092085206384,
+      "lng": -80.5496115288871
     }
   ],
   "data": [
@@ -3105,6 +3363,6 @@
     {
       "lat": 43.47151609,
       "lng": -80.54497437
-    } 
+    }
   ]
 }
