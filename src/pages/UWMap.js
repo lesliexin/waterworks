@@ -176,6 +176,7 @@ export function UWMap({ redirectPage }) {
   const [featuredPinData, setFeaturedPinData] = useState([]);
   const [storyInfo, setStoryInfo] = useState(undefined);
   const [error, setError] = useState(false);
+  const [lastClicked, setLastClicked] = useState(-1);
   const zoom = 16.25;
   const minZoom = 14.5;
   const maxZoom = 18;
@@ -203,6 +204,7 @@ export function UWMap({ redirectPage }) {
 
   const handleOpenModal = (s) => {
     setStoryInfo(s);
+    setLastClicked(s.id);
   };
 
   const handleCloseModal = () => {
@@ -285,6 +287,7 @@ export function UWMap({ redirectPage }) {
                 <Pin
                   key={key}
                   position={[pin.lat, pin.lng]}
+                  isLastClicked={pin.id === lastClicked}
                   storyInfo={{
                     id: pin.id,
                     story: pin.story,
